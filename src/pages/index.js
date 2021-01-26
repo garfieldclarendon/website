@@ -1,12 +1,12 @@
 import { Link } from 'gatsby'
 import React from 'react'
 import Helmet from 'react-helmet'
-import pic01 from '../assets/images/pic01.jpg'
-import pic02 from '../assets/images/pic02.jpg'
-import pic03 from '../assets/images/pic03.jpg'
-import pic04 from '../assets/images/pic04.jpg'
-import pic05 from '../assets/images/pic05.jpg'
-import pic06 from '../assets/images/pic06.jpg'
+import tour from '../assets/images/blockTour.jpg'
+import visit from '../assets/images/blockVisit.jpg'
+import GCYouthProgram from '../assets/images/GCYouthProgram.jpg'
+import LearnSomethingNew from '../assets/images/LearnSomethingNew.jpg'
+import blockSocialMedia from '../assets/images/blockSocialMedia.png'
+import blockHistory from '../assets/images/blockHistory.jpg'
 import Banner from '../components/Banner'
 import Layout from '../components/layout'
 
@@ -15,7 +15,7 @@ class HomeIndex extends React.Component {
     return (
       <Layout>
         <Helmet
-          title="Gatsby Starter - Forty"
+          title="Garfield-Clarendon Model Railroad Club, Chicago IL"
           meta={[
             { name: 'description', content: 'Sample' },
             { name: 'keywords', content: 'sample, something' },
@@ -26,75 +26,75 @@ class HomeIndex extends React.Component {
 
         <div id="main">
           <section id="one" className="tiles">
-            <article style={{ backgroundImage: `url(${pic01})` }}>
+            <article style={{ backgroundImage: `url(${visit})` }}>
               <Link
                 aria-label="Link to Landing Page"
                 to="/landing"
                 className="link primary"
               >
                 <header className="major">
-                  <h3>Aliquam</h3>
-                  <p>Ipsum dolor sit amet</p>
+                  <h3>Visit</h3>
+                  <p>Plan your visit</p>
                 </header>
               </Link>
             </article>
-            <article style={{ backgroundImage: `url(${pic02})` }}>
+            <article style={{ backgroundImage: `url(${GCYouthProgram})` }}>
               <Link
                 aria-label="Link to Landing Page"
                 to="/landing"
                 className="link primary"
               >
                 <header className="major">
-                  <h3>Tempus</h3>
-                  <p>feugiat amet tempus</p>
+                  <h3>Outreach</h3>
+                  <p>Giving back to the community</p>
                 </header>
               </Link>
             </article>
-            <article style={{ backgroundImage: `url(${pic03})` }}>
+            <article style={{ backgroundImage: `url(${LearnSomethingNew})` }}>
               <Link
                 aria-label="Link to Landing Page"
                 to="/landing"
                 className="link primary"
               >
                 <header className="major">
-                  <h3>Magna</h3>
-                  <p>Lorem etiam nullam</p>
+                  <h3>Education</h3>
+                  <p>Learn about the model railroading</p>
                 </header>
               </Link>
             </article>
-            <article style={{ backgroundImage: `url(${pic04})` }}>
+            <article style={{ backgroundImage: `url(${blockHistory})` }}>
               <Link
                 aria-label="Link to Landing Page"
                 to="/landing"
                 className="link primary"
               >
                 <header className="major">
-                  <h3>Ipsum</h3>
-                  <p>Nisl sed aliquam</p>
+                  <h3>History</h3>
+                  <p>Discover something new</p>
                 </header>
               </Link>
             </article>
-            <article style={{ backgroundImage: `url(${pic05})` }}>
+            <article style={{ backgroundImage: `url(${tour})` }}>
               <Link
                 aria-label="Link to Landing Page"
                 to="/landing"
                 className="link primary"
               >
                 <header className="major">
-                  <h3>Consequat</h3>
-                  <p>Ipsum dolor sit amet</p>
+                  <h3>Tour</h3>
+                  <p>Take a virtual tour of the layout </p>
                 </header>
               </Link>
             </article>
-            <article style={{ backgroundImage: `url(${pic06})` }}>
+            <article style={{ backgroundImage: `url(${blockSocialMedia})` }}>
               <Link
                 aria-label="Link to Landing Page"
                 to="/landing"
                 className="link primary"
               >
                 <header className="major">
-                  <h3>Etiam</h3>
-                  <p>Feugiat amet tempus</p>
+                  <h3>Social Media</h3>
+                  <p>Connect with us</p>
                 </header>
               </Link>
             </article>
@@ -102,16 +102,10 @@ class HomeIndex extends React.Component {
           <section id="two">
             <div className="inner">
               <header className="major">
-                <h2>Massa libero</h2>
+                <h2>Model Railroading in the City</h2>
               </header>
               <p>
-                Nullam et orci eu lorem consequat tincidunt vivamus et sagittis
-                libero. Mauris aliquet magna magna sed nunc rhoncus pharetra.
-                Pellentesque condimentum sem. In efficitur ligula tate urna.
-                Maecenas laoreet massa vel lacinia pellentesque lorem ipsum
-                dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et
-                sagittis libero. Mauris aliquet magna magna sed nunc rhoncus
-                amet pharetra et feugiat tempus.
+                Little space and big dreams? No problem! In our new series of blog posts we explore how to create a small layout perfect for city dewellers. Our solutions won't comprimise on enjoyment but will fit any apartment.
               </p>
               <ul className="actions">
                 <li>
