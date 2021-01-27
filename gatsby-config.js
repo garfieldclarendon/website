@@ -1,9 +1,12 @@
 const path = require('path')
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+})
 
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby Theme - Forty',
-    author: 'Hunter Chang',
+    title: 'Garfield-Clarendon Model Railroad Club',
+    author: 'Ryan Balla',
     description: 'A Gatsby.js Theme based on Forty by HTML5 UP',
   },
   plugins: [
@@ -28,5 +31,15 @@ module.exports = {
     },
     'gatsby-plugin-sass',
     'gatsby-plugin-offline',
+    {
+      resolve: 'gatsby-source-contentful',
+      options: {
+        spaceId: process.env.CONTENTFUL_SPACE_ID,
+        accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
+        richText: {
+          resolveFieldLocales: true,
+        },
+      },
+    },
   ],
 }
