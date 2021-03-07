@@ -24,6 +24,14 @@
 		position: relative;
 		top: -3.25em;
 
+		&.visitors {
+			@include vendor('background-image', 'url("../images/visitors.jpeg")');
+		}
+
+		&.youthOutreach {
+			@include vendor('background-image', 'url("../images/youth_outreach1.jpg")');
+		}
+
 		&:after {
 			@include vendor('transition', 'opacity #{_duration(banner)} ease');
 			@include vendor('transition-delay', '0.75s');

@@ -25,11 +25,11 @@ class HomeIndex extends React.Component {
         <Banner />
 
         <div id="main">
-          <section id="one" className="tiles">
+          <section id="planYourVisit" className="tiles">
             <article style={{ backgroundImage: `url(${visit})` }}>
               <Link
                 aria-label="Link to Landing Page"
-                to="/landing"
+                to="/visit"
                 className="link primary"
               >
                 <header className="major">
@@ -41,7 +41,7 @@ class HomeIndex extends React.Component {
             <article style={{ backgroundImage: `url(${GCYouthProgram})` }}>
               <Link
                 aria-label="Link to Landing Page"
-                to="/landing"
+                to="/outreach"
                 className="link primary"
               >
                 <header className="major">
