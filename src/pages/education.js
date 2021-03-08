@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import Helmet from 'react-helmet'
+import SEO from '../components/SEO'
 import Layout from '../components/layout'
 import BannerLanding from '../components/BannerLanding'
 
@@ -10,11 +10,7 @@ import collecting from '../assets/images/collecting.jpeg'
 
 const Landing = (props) => (
     <Layout>
-        <Helmet>
-            <title>Landing - Forty by HTML5 UP</title>
-            <meta name="description" content="Landing Page" />
-        </Helmet>
-
+        <SEO pageTitle="Learn About Model Railroading" />
         <BannerLanding style="learnAboutModelRailroading" title="Learn About Model Railroading" description="An Introduction to Model Railroading " />
 
         <div id="main">

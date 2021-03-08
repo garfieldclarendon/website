@@ -1,6 +1,6 @@
 import React, { useState, useCallback } from 'react'
 import { Link, graphql } from 'gatsby'
-import Helmet from 'react-helmet'
+import SEO from '../components/SEO'
 import Layout from '../components/layout'
 import Gallery from "react-photo-gallery"
 import Dialog from 'react-dialog'
@@ -59,11 +59,7 @@ const Landing = ({ data }) => {
 
     return (
         <Layout>
-            <Helmet>
-                <title>Landing - Forty by HTML5 UP</title>
-                <meta name="description" content="Landing Page" />
-            </Helmet>
-
+            <SEO pageTitle="Tour Our Layout" />
             <BannerLanding style="tour" title="Tour the Garfield Central" description="A virtual tour of our layout." />
 
             <div id="main">

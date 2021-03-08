@@ -14,7 +14,7 @@ class HomeIndex extends React.Component {
   render() {
     return (
       <Layout>
-        <SEO />
+        <SEO pageTitle="Home" />
         <Banner />
 
         <div id="main">
@@ -27,7 +27,7 @@ class HomeIndex extends React.Component {
               >
                 <header className="major">
                   <h3>Visit</h3>
-                  <p>Plan your visit</p>
+                  <p>Guests are Welcome</p>
                 </header>
               </Link>
             </article>

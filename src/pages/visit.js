@@ -1,20 +1,13 @@
 import React from 'react'
-import { Link } from 'gatsby'
 import Helmet from 'react-helmet'
 import Layout from '../components/layout'
 import BannerLanding from '../components/BannerLanding'
-
-import pic08 from '../assets/images/pic08.jpg'
-import pic09 from '../assets/images/pic09.jpg'
+import SEO from '../components/SEO'
 import williamsport from '../assets/images/williamsport.jpeg'
 
 const Landing = (props) => (
     <Layout>
-        <Helmet>
-            <title>Visit - Garfield-Clarendon Model Railroad Club</title>
-            <meta name="description" content="Plan your visit" />
-        </Helmet>
-
+        <SEO pageTitle="Visit" />
         <BannerLanding style="visitors" title="Visitors are always welcome" description="Located in the Clarendon Park Community Center in Uptown, Chicago" />
 
         <div id="main">

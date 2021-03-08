@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import Helmet from 'react-helmet'
+import SEO from '../components/SEO'
 import Layout from '../components/layout'
 import BannerLanding from '../components/BannerLanding'
 
@@ -10,10 +10,7 @@ import youthProgram2 from '../assets/images/youth_program2.jpg'
 
 const Landing = (props) => (
     <Layout>
-        <Helmet>
-            <title>Landing - Forty by HTML5 UP</title>
-            <meta name="description" content="Landing Page" />
-        </Helmet>
+        <SEO pageTitle="Youth Outreach Program" />
 
         <BannerLanding style="youthOutreach" title="Community Youth Outreach Program" description="A fun and educational program for local students." />
 

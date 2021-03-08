@@ -1,12 +1,12 @@
 import React from 'react'
 import Helmet from 'react-helmet'
 
-function SEO() {
+function SEO({ pageTitle }) {
     return (
         <Helmet htmlAttributes={{
             lang: 'en',
         }}>
-            <title>Garfield-Clarendon Model Railroad Club, Chicago IL</title>
+            <title>{`Garfield-Clarendon Model Railroad Club, Chicago IL - ${pageTitle}`}</title>
             <meta name="description" content="Generic Page" />
             <meta charSet="utf-8" />
             <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico.png" />

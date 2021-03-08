@@ -28,7 +28,7 @@ export default function Blog({ data, pageContext }) {
     return (<>
         {pageContext.data && (
             <Layout>
-                <SEO />
+                <SEO pageTitle={pageContext.data.node.articleTitle} />
                 <div id="main" className="alt">
                     <section id="one">
                         <div className="inner">

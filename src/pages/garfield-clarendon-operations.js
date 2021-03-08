@@ -1,15 +1,12 @@
 import React from 'react'
-import Helmet from 'react-helmet'
 import Layout from '../components/layout'
+import SEO from '../components/SEO'
 
 import operations from '../assets/images/operations.jpeg'
 
 const Generic = (props) => (
     <Layout>
-        <Helmet>
-            <title>Generic - Forty by HTML5 UP</title>
-            <meta name="description" content="Generic Page" />
-        </Helmet>
+        <SEO pageTitle="Learn About Model Railroading" />
 
         <div id="main" className="alt">
             <section id="one">
