@@ -38,6 +38,14 @@
     max-width: _size(inner);
     width: calc(100% - 6em);
 
+    .responsivePageImage {
+      width: 100%;
+    }
+
+    header.major > p {
+      width: 80%
+    }
+
     @include breakpoint(small) {
       @include padding(3em, 0);
       width: calc(100% - 3em);
@@ -73,3 +81,4 @@
 @import 'layout/footer';
 @import 'layout/wrapper';
 @import 'layout/menu';
+@import 'layout/dialog';

@@ -53,7 +53,7 @@ class HomeIndex extends React.Component {
             <article style={{ backgroundImage: `url(${LearnSomethingNew})` }}>
               <Link
                 aria-label="Link to Landing Page"
-                to="/landing"
+                to="/education"
                 className="link primary"
               >
                 <header className="major">
@@ -65,7 +65,7 @@ class HomeIndex extends React.Component {
             <article style={{ backgroundImage: `url(${blockHistory})` }}>
               <Link
                 aria-label="Link to Landing Page"
-                to="/landing"
+                to="/history"
                 className="link primary"
               >
                 <header className="major">
@@ -77,7 +77,7 @@ class HomeIndex extends React.Component {
             <article style={{ backgroundImage: `url(${tour})` }}>
               <Link
                 aria-label="Link to Landing Page"
-                to="/landing"
+                to="/tour"
                 className="link primary"
               >
                 <header className="major">
@@ -89,7 +89,7 @@ class HomeIndex extends React.Component {
             <article style={{ backgroundImage: `url(${blockSocialMedia})` }}>
               <Link
                 aria-label="Link to Landing Page"
-                to="/landing"
+                to="/social-media"
                 className="link primary"
               >
                 <header className="major">

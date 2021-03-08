@@ -32,6 +32,22 @@
 			@include vendor('background-image', 'url("../images/youth_outreach1.jpg")');
 		}
 
+		&.learnAboutModelRailroading {
+			@include vendor('background-image', 'url("../images/learn_about_model_railroading.jpeg")');
+		}
+
+		&.history {
+			@include vendor('background-image', 'url("../images/history.jpeg")');
+		}
+
+		&.socialMedia {
+			@include vendor('background-image', 'url("../images/socialMedia1.jpeg")');
+		}
+
+		&.tour {
+			@include vendor('background-image', 'url("../images/tour.jpg")');
+		}
+
 		&:after {
 			@include vendor('transition', 'opacity #{_duration(banner)} ease');
 			@include vendor('transition-delay', '0.75s');
@@ -50,6 +66,7 @@
 
 		h1 {
 			font-size: 3.25em;
+			text-shadow: 0 1px 3px #000000;
 		}
 
 		> .inner {
@@ -98,6 +115,7 @@
 					font-weight: _font(weight-bold);
 					letter-spacing: _font(letter-spacing-alt);
 					text-transform: uppercase;
+					text-shadow: 0 1px 3px #000000;
 				}
 			}
 		}
