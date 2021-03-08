@@ -9,13 +9,13 @@ const Menu = (props) => (
                 <li><Link onClick={props.onToggleMenu} to="/">Home</Link></li>
                 <li><Link onClick={props.onToggleMenu} to="/blog">Blog</Link></li>
                 <li><Link onClick={props.onToggleMenu} to="/visit">Visit</Link></li>
-                <li><Link onClick={props.onToggleMenu} to="/elements">Outreach</Link></li>
+                <li><Link onClick={props.onToggleMenu} to="/outreach">Outreach</Link></li>
                 <li><Link onClick={props.onToggleMenu} to="/tour">Tour</Link></li>
-                <li><Link onClick={props.onToggleMenu} to="/connect">Connect</Link></li>
+                <li><Link onClick={props.onToggleMenu} to="/social-media">Connect</Link></li>
             </ul>
             <ul className="actions vertical">
                 <li><a href="/visit" className="button special fit">Visit</a></li>
-                <li><a href="#" className="button fit">Member Log In</a></li>
+                <li><a href="https://locomotivehouse.com" className="button fit">Member Log In</a></li>
             </ul>
         </div>
         <a className="close" onClick={props.onToggleMenu} href="javascript:;">Close</a>
