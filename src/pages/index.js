@@ -1,6 +1,5 @@
 import { Link } from 'gatsby'
 import React from 'react'
-import Helmet from 'react-helmet'
 import tour from '../assets/images/blockTour.jpg'
 import visit from '../assets/images/blockVisit.jpg'
 import GCYouthProgram from '../assets/images/GCYouthProgram.jpg'
@@ -9,19 +8,13 @@ import blockSocialMedia from '../assets/images/blockSocialMedia.png'
 import blockHistory from '../assets/images/blockHistory.jpg'
 import Banner from '../components/Banner'
 import Layout from '../components/layout'
+import SEO from '../components/SEO'
 
 class HomeIndex extends React.Component {
   render() {
     return (
       <Layout>
-        <Helmet
-          title="Garfield-Clarendon Model Railroad Club, Chicago IL"
-          meta={[
-            { name: 'description', content: 'Sample' },
-            { name: 'keywords', content: 'sample, something' },
-          ]}
-        ></Helmet>
-
+        <SEO />
         <Banner />
 
         <div id="main">

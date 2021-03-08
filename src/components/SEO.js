@@ -3,7 +3,9 @@ import Helmet from 'react-helmet'
 
 function SEO() {
     return (
-        <Helmet>
+        <Helmet htmlAttributes={{
+            lang: 'en',
+        }}>
             <title>Garfield-Clarendon Model Railroad Club, Chicago IL</title>
             <meta name="description" content="Generic Page" />
             <meta charSet="utf-8" />
