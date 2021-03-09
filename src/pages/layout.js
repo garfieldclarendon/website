@@ -1,5 +1,4 @@
 import React from 'react'
-import Helmet from 'react-helmet'
 import Layout from '../components/layout'
 
 import layoutOverall from '../assets/images/layoutOverall.jpg';
@@ -23,11 +22,6 @@ import gaskill1 from '../assets/images/tour/gaskillMine1.jpeg';
 
 const Generic = (props) => (
     <Layout>
-        <Helmet>
-            <title>Generic - Forty by HTML5 UP</title>
-            <meta name="description" content="Generic Page" />
-        </Helmet>
-
         <div id="main" className="alt">
             <section id="one">
                 <div className="inner">

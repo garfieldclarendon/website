@@ -7,6 +7,10 @@
 
 @import 'css-grid';
 
+body {
+  position: relative;
+}
+
 /*
 	Forty by HTML5 UP
 	html5up.net | @ajlkn
@@ -82,3 +86,4 @@
 @import 'layout/wrapper';
 @import 'layout/menu';
 @import 'layout/dialog';
+@import 'layout/notices';

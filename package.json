@@ -5,6 +5,7 @@
   "author": "Hunter Chang",
   "dependencies": {
     "contentful": "^8.1.7",
+    "date-fns": "^2.19.0",
     "dotenv": "^8.2.0",
     "gatsby-plugin-manifest": "^2.2.4",
     "gatsby-plugin-offline": "^2.2.4",

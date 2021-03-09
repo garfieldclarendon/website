@@ -1,11 +1,10 @@
 import React from 'react'
-import Helmet from 'react-helmet'
 import Layout from '../components/layout'
 import BannerLanding from '../components/BannerLanding'
 import SEO from '../components/SEO'
 import williamsport from '../assets/images/williamsport.jpeg'
 
-const Landing = (props) => (
+const Landing = () => (
     <Layout>
         <SEO pageTitle="Visit" />
         <BannerLanding style="visitors" title="Visitors are always welcome" description="Located in the Clarendon Park Community Center in Uptown, Chicago" />
