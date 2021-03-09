@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import { format, toDate } from 'date-fns';
+import { format, toDate, setDay, getDay } from 'date-fns';
+import startOfMonth from 'date-fns/startOfMonth';
 import { useStaticQuery, graphql } from 'gatsby'
 
 const Notice = () => {
@@ -19,9 +20,13 @@ const Notice = () => {
     const futureDates = data.allContentfulOpenHouses.nodes.filter(item => (toDate(new Date(item.date)) > new Date()));
     const hasOpenHouses = futureDates.length > 0;
     let showOpenMessage = false;
+    const friday = 5;
     const currentDay = format(new Date(), 'EEE');
+    const start = startOfMonth(new Date());
+    const firstFriday = setDay(start, friday, { weekStartsOn: getDay(start) });
+    const isTheFirstWeek = toDate(new Date(firstFriday)) > new Date();
 
-    if (currentDay === "Wed" || currentDay === "Thurs" || currentDay === "Fri") {
+    if (!isTheFirstWeek && (currentDay === "Wed" || currentDay === "Thurs" || currentDay === "Fri")) {
         showOpenMessage = true;
     }
 

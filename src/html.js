@@ -5,6 +5,7 @@ export default function HTML(props) {
   return (
     <html {...props.htmlAttributes} lang="en">
       <head>
+        <link rel="shortcut icon" type="image/png" href="/favicon.ico.png" />
         <meta charSet="utf-8" />
         <meta httpEquiv="x-ua-compatible" content="ie=edge" />
         <meta
