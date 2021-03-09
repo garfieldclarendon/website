@@ -35,12 +35,6 @@ const Notice = () => {
         theDate = toDate(new Date(data.allContentfulOpenHouses.nodes[0].date));
     }
 
-    if (hasOpenHouses || showOpenMessage) {
-        document.querySelector('body').classList.add('hasNoticeBar');
-    } else {
-        document.querySelector('body').classList.remove('hasNoticeBar');
-    }
-
     return (<BodyClassName className={(hasOpenHouses || showOpenMessage) ? 'hasNoticeBar' : ''}>
         {(hasOpenHouses || showOpenMessage) && <div className="noticeBar">
             <p>
