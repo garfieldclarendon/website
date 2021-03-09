@@ -1,4 +1,5 @@
 import React from 'react'
+import BodyClassName from 'react-body-classname';
 import { Link } from 'gatsby'
 import { format, toDate, setDay, getDay } from 'date-fns';
 import startOfMonth from 'date-fns/startOfMonth';
@@ -40,15 +41,14 @@ const Notice = () => {
         document.querySelector('body').classList.remove('hasNoticeBar');
     }
 
-    return ((hasOpenHouses || showOpenMessage) && (<>
-        <div className="noticeBar">
+    return (<BodyClassName className={(hasOpenHouses || showOpenMessage) ? 'hasNoticeBar' : ''}>
+        {(hasOpenHouses || showOpenMessage) && <div className="noticeBar">
             <p>
                 {showOpenMessage && <><b>Open on Friday:</b> 7PM - 9PM <Link to="/visit">Learn More</Link></>}
                 {hasOpenHouses && (<><b>Next open house:</b> {format(theDate, 'yyyy-MM-dd')} <Link to="/open-houses">Learn More</Link></>)}
             </p>
-        </div>
-    </>)
-    )
+        </div>}
+    </BodyClassName>)
 }
 
 export default Notice
