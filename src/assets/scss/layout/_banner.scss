@@ -52,6 +52,10 @@
 			@include vendor('background-image', 'url("../images/openHouses.jpg")');
 		}
 
+		&.videos {
+			@include vendor('background-image', 'url("../images/videos.jpg")');
+		}
+
 		&:after {
 			@include vendor('transition', 'opacity #{_duration(banner)} ease');
 			@include vendor('transition-delay', '0.75s');

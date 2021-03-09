@@ -3,7 +3,7 @@ import { graphql, useStaticQuery, Link } from 'gatsby'
 import SEO from '../components/SEO'
 import Layout from '../components/layout'
 
-import pic11 from '../assets/images/pic11.jpg'
+import blogPic from '../assets/images/blog.jpg'
 
 const Generic = (props) => {
     const data = useStaticQuery(
@@ -33,7 +33,7 @@ const Generic = (props) => {
                         <header className="major">
                             <h1>Blog</h1>
                         </header>
-                        <span className="image main"><img src={pic11} alt="" /></span>
+                        <span className="image main"><img src={blogPic} alt="Acela train nears Georgetown" /></span>
                         {data.allContentfulBlog.nodes.map(blogPost => {
                             const bodyJSON = JSON.parse(blogPost.body.raw);
                             const firstParagraph = bodyJSON.content.filter(item => item.nodeType === 'paragraph')[0];
@@ -41,6 +41,7 @@ const Generic = (props) => {
                                 <article key={blogPost.id}>
                                     <h2><Link to={`/blog/${blogPost.slug}`}>{blogPost.articleTitle}</Link></h2>
                                     <p>{firstParagraph.content[0].value}</p>
+                                    <p><Link className="button" to={`/blog/${blogPost.slug}`}>Read More</Link></p>
                                 </article>
                             )
                         })}

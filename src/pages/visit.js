@@ -35,7 +35,7 @@ const Landing = () => (
                 </section>
                 <section>
                     <div className="image">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2966.705025808824!2d-87.65147078457677!3d41.963670468033904!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fd3cf9455abf1%3A0xa3083269e6ce880!2sGarfield-Clarendon%20Model%20Railroad%20Club!5e0!3m2!1sen!2sus!4v1615137454411!5m2!1sen!2sus" width="500" height="450" allowfullscreen="" loading="lazy"></iframe>
+                        <iframe title="Google Map of Garfield-Clarendon Location" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2966.705025808824!2d-87.65147078457677!3d41.963670468033904!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fd3cf9455abf1%3A0xa3083269e6ce880!2sGarfield-Clarendon%20Model%20Railroad%20Club!5e0!3m2!1sen!2sus!4v1615137454411!5m2!1sen!2sus" width="500" height="450" allowfullscreen="" loading="lazy"></iframe>
                     </div>
                     <div className="content">
                         <div className="inner">

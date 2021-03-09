@@ -83,6 +83,7 @@ const Landing = ({ data }) => {
                                     viewerIsOpen && (
                                         <>
                                             <Dialog
+                                                hasCloseIcon={true}
                                                 closeOnEscape={true}
                                                 modal={true}
                                                 onClose={handleClose}
@@ -92,8 +93,8 @@ const Landing = ({ data }) => {
                                                         onClick: () => handleClose()
                                                     }]
                                                 }
-                                                height={800}
-                                                width={800}>
+                                                height={600}
+                                                width={700}>
                                                 <img src={currentImage.src} alt={currentImage.alt} />
                                                 <p>{currentImage.description}</p>
                                             </Dialog>
