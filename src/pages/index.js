@@ -22,12 +22,12 @@ class HomeIndex extends React.Component {
             <article style={{ backgroundImage: `url(${visit})` }}>
               <Link
                 aria-label="Link to Landing Page"
-                to="/blog"
+                to="/media"
                 className="link primary"
               >
                 <header className="major">
-                  <h3>Blog</h3>
-                  <p>Model railroading news and tips</p>
+                  <h3>Photos &amp; Video</h3>
+                  <p>Layout details</p>
                 </header>
               </Link>
             </article>
@@ -38,7 +38,7 @@ class HomeIndex extends React.Component {
                 className="link primary"
               >
                 <header className="major">
-                  <h3>Outreach</h3>
+                  <h3>Outreach, STEM</h3>
                   <p>Giving back to the community</p>
                 </header>
               </Link>
