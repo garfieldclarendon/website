@@ -10,9 +10,9 @@ import youthProgram2 from '../assets/images/youth_program2.jpg'
 
 const Landing = (props) => (
     <Layout>
-        <SEO pageTitle="Youth Outreach Program" />
+        <SEO pageTitle="Youth STEM Outreach Program" />
 
-        <BannerLanding style="youthOutreach" title="Community Youth Outreach Program" description="A fun and educational program for local students." />
+        <BannerLanding style="youthOutreach" title="Community Youth Outreach Program Teaching STEM" description="A fun and educational program for local students." />
 
         <div id="main">
             <section id="one">
@@ -20,7 +20,7 @@ const Landing = (props) => (
                     <header className="major">
                         <h2>An Introduction</h2>
                     </header>
-                    <p>The winter of 2018 saw our first annual six week program for children in our local schools. Since then this program has become an integral part of our club’s mission to share knowledge of model railroading and giving back to the community. The program was held using a classroom at the Chicago Park District’s Clarendon Park Community Center and the train layout room.</p>
+                    <p>The winter of 2018 saw our first annual six week program for children in our local schools. Since then this program has become an integral part of our club’s mission to share knowledge of model railroading and giving back to the community utilizing STEM. The program was held using a classroom at the Chicago Park District’s Clarendon Park Community Center and the train layout room.</p>
                     <p>We taught how mathematics, engineering, and other sciences play a role in the everyday operations of railroads and public transit. </p>
                 </div>
             </section>
