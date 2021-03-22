@@ -7,6 +7,7 @@ import BannerLanding from '../components/BannerLanding'
 import youthProgram4 from '../assets/images/youthProgram4.jpg'
 import youthProgram3 from '../assets/images/youthProgram3.jpg'
 import youthProgram2 from '../assets/images/youth_program2.jpg'
+import BNSF from '../assets/images/BNSF-Proud-Sponsor.png'
 
 const Landing = (props) => (
     <Layout>
@@ -22,6 +23,10 @@ const Landing = (props) => (
                     </header>
                     <p>The winter of 2018 saw our first annual six week program for children in our local schools. Since then this program has become an integral part of our club’s mission to share knowledge of model railroading and giving back to the community utilizing STEM. The program was held using a classroom at the Chicago Park District’s Clarendon Park Community Center and the train layout room.</p>
                     <p>We taught how mathematics, engineering, and other sciences play a role in the everyday operations of railroads and public transit. </p>
+                    <p>
+                        <img width="300" src={BNSF} alt="Proud Corporate Sponsor: Burlington Northern Santa Fe Railway" />
+                        <br /><b>Proud Corporate Sponsor: Burlington Northern Santa Fe Railway</b>
+                    </p>
                 </div>
             </section>
             <section id="two" className="spotlights">

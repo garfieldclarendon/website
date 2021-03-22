@@ -4,7 +4,8 @@ import SEO from '../components/SEO'
 import Layout from '../components/layout'
 import Gallery from "react-photo-gallery"
 import Dialog from 'react-dialog'
-import BannerLanding from '../components/BannerLanding'
+import BannerVideo from '../components/BannerVideo'
+import acela from '../assets/videos/acela.mp4';
 
 export const query = graphql`
     query Photos {
@@ -58,7 +59,14 @@ const Landing = ({ data }) => {
     return (
         <Layout>
             <SEO pageTitle="Photos and Videos" />
-            <BannerLanding style="photovideo" title="Photos and Videos of the Layout" description="A virtual tour of our layout." />
+            <BannerVideo
+                imageClass="media"
+                title="Photos and Videos of the Layout"
+                description="A virtual tour of our layout."
+                video={acela}
+                videoHeight="897"
+                videoWidth="1594"
+            />
 
             <div id="main">
                 <section id="one">

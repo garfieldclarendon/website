@@ -24,6 +24,19 @@
 		position: relative;
 		top: -3.25em;
 
+		& video {
+			&.loading {
+				display: none;
+			}
+			position: absolute;
+			left: 0;
+			top: 0;
+		}
+
+		&.video {
+			overflow: hidden;
+		}
+
 		&.visitors {
 			@include vendor('background-image', 'url("../images/visitors.jpeg")');
 		}
@@ -58,6 +71,10 @@
 
 		&.photovideo {
 			@include vendor('background-image', 'url("../images/videophoto.jpg")');
+		}
+
+		&.media {
+			@include vendor('background-image', 'url("../images/media.png")');
 		}
 
 		&:after {
