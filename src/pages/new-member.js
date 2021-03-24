@@ -11,7 +11,8 @@ const NewMember = (props) => {
     const handleSubmit = e => {
         e.preventDefault();
         let myForm = document.getElementById('membershipApplication');
-        let formData = new FormData(myForm)
+        let formData = new FormData(myForm);
+        console.log(formData);
         fetch('/', {
             method: 'POST',
             headers: { "Content-Type": "application/x-www-form-urlencoded" },
@@ -31,8 +32,8 @@ const NewMember = (props) => {
                         </header>
                         <span className="image main"><img src={membershipApplication} alt="Members in the club room" /></span>
                         {isSuccessful && <p>Application submitted, thanks! We will reach out to you soon.</p>}
-                        {!isSuccessful && <form action="new-member-success" id="membershipApplication" method="post" data-netlify="true" netlify-honeypot="bot-field">
-                            <input type="hidden" name="form-name" value="new membership" />
+                        {!isSuccessful && <form action="new-member-success" id="membershipApplication" method="post" data-netlify="true" netlify-honeypot="bot-field" onSubmit={handleSubmit}>
+                            <input type="hidden" name="form-name" value="newMembership" />
                             <div className="grid-wrapper">
                                 <div className="col-12">
                                     <p>There is a probationary period of six (6) months. Probationary Member Dues are $6.00 per month. After this period, if the applicant is accepted for Membership, an initiation fee of $60.00 is due. The initiation fee includes the first month’s Club dues & club T-shirt. Dues are: $12.00 per month for Regular Member; $5.00 per month of Junior Member; $9.00 per month for Family Member.
@@ -177,7 +178,7 @@ const NewMember = (props) => {
                                 <div className="col-12">
                                     {isError && <p>There was an issue, please try again.</p>}
                                     <ul className="actions">
-                                        <li><button onClick={handleSubmit} type="button">Submit Application</button></li>
+                                        <li><button type="submit">Submit Application</button></li>
                                     </ul>
                                 </div>
                             </div>

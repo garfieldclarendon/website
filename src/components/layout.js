@@ -37,7 +37,6 @@ class Layout extends React.Component {
 
     render() {
         const { children, path } = this.props
-        console.log(this.props.path);
         return (
             <>
                 <Notice />
