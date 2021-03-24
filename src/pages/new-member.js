@@ -30,9 +30,9 @@ const Generic = (props) => {
                             <h1>New Membership Application</h1>
                         </header>
                         <span className="image main"><img src={membershipApplication} alt="Members in the club room" /></span>
-                        {isError && <p>There was an issue, please try again.</p>}
                         {isSuccessful && <p>Application submitted, thanks! We will reach out to you soon.</p>}
-                        {!isSuccessful && <form action="new-member-success" id="membershipApplication" method="post" data-netlify="true" netlify-honeypot="bot-field" onSubmit={handleSubmit}>
+                        {!isSuccessful && <form action="new-member-success" id="membershipApplication" method="post" data-netlify="true" netlify-honeypot="bot-field">
+                            <input type="hidden" name="form-name" value="new membership" />
                             <div className="grid-wrapper">
                                 <div className="col-12">
                                     <p>There is a probationary period of six (6) months. Probationary Member Dues are $6.00 per month. After this period, if the applicant is accepted for Membership, an initiation fee of $60.00 is due. The initiation fee includes the first month’s Club dues & club T-shirt. Dues are: $12.00 per month for Regular Member; $5.00 per month of Junior Member; $9.00 per month for Family Member.
@@ -175,8 +175,9 @@ const Generic = (props) => {
                                     </div>
                                 </div>
                                 <div className="col-12">
+                                    {isError && <p>There was an issue, please try again.</p>}
                                     <ul className="actions">
-                                        <li><input type="submit" value="Submit Application" className="special" /></li>
+                                        <li><button onClick={handleSubmit} type="button">Submit Application</button></li>
                                     </ul>
                                 </div>
                             </div>
