@@ -41,7 +41,7 @@ const NewMember = (props) => {
                                 </div>
                                 <div className="col-12">
                                     <div className="select-wrapper mb-5">
-                                        <label for="name">Application Type</label>
+                                        <label htmlFor="name">Application Type</label>
                                         <select name="applicationType" id="applicationType">
                                             <option defaultValue="regular">Regular</option>
                                             <option value="junior">Junior</option>
@@ -51,40 +51,46 @@ const NewMember = (props) => {
                                 </div>
                                 <div className="col-6">
                                     <div className="mb-5">
-                                        <label for="name">Name</label>
-                                        <input type="text" name="name" id="name" defaultValue="" placeholder="Name" />
+                                        <label htmlFor="name">Name</label>
+                                        <input type="text" name="name" id="name" defaultValue="" placeholder="Name" required />
                                     </div>
                                 </div>
                                 <div className="col-6">
                                     <div className="mb-5">
-                                        <label for="date">Date</label>
-                                        <input type="text" name="date" id="date" defaultValue="" placeholder="Date" />
+                                        <label htmlFor="date">Date</label>
+                                        <input type="text" name="date" id="date" defaultValue="" placeholder="Date" required />
                                     </div>
                                 </div>
                                 <div className="col-12">
                                     <div className="mb-5">
-                                        <label for="date">Address</label>
-                                        <input type="text" name="address" id="address" defaultValue="" placeholder="Address" />
+                                        <label htmlFor="date">Email</label>
+                                        <input type="text" name="email" id="email" defaultValue="" placeholder="Email" required />
+                                    </div>
+                                </div>
+                                <div className="col-12">
+                                    <div className="mb-5">
+                                        <label htmlFor="date">Address</label>
+                                        <input type="text" name="address" id="address" defaultValue="" placeholder="Address" required />
                                     </div>
                                 </div>
                                 <div className="col-4">
-                                    <label for="age">Age</label>
-                                    <div className="mb-5"><input type="text" name="age" id="age" defaultValue="" placeholder="Age" /></div>
+                                    <label htmlFor="age">Age</label>
+                                    <div className="mb-5"><input type="text" name="age" id="age" defaultValue="" placeholder="Age" required /></div>
                                 </div>
                                 <div className="col-8">
-                                    <label for="occupation">Occupation</label>
+                                    <label htmlFor="occupation">Occupation</label>
                                     <div className="mb-5"><input type="text" name="occupation" id="occupation" defaultValue="" placeholder="Occupation" /></div>
                                 </div>
                                 <div className="col-12">
                                     <div className="mb-5">
-                                        <label for="scale">In what scale are you interested?</label>
-                                        <input type="text" name="scale" id="scale" defaultValue="" placeholder="" />
+                                        <label htmlFor="scale">In what scale are you interested?</label>
+                                        <input type="text" name="scale" id="scale" defaultValue="" placeholder="" required />
                                     </div>
                                 </div>
                                 <div className="col-12">
                                     <div className="mb-5">
-                                        <label for="howLong">How long have you been interested in model railroading?</label>
-                                        <input type="text" name="howLong" id="howLong" defaultValue="" placeholder="" />
+                                        <label htmlFor="howLong">How long have you been interested in model railroading?</label>
+                                        <input type="text" name="howLong" id="howLong" defaultValue="" placeholder="" required />
                                     </div>
                                 </div>
                                 <div className="col-12">
@@ -92,14 +98,14 @@ const NewMember = (props) => {
                                 </div>
                                 <div className="col-6">
                                     <div className="mb-5">
-                                        <input type="radio" id="homeLayoutNo" name="homeLayout" defaultChecked />
-                                        <label htmlFor="homeLayoutNo">No home layout</label>
+                                        <input type="radio" id="homeLayoutNo" name="homeLayout" required />
+                                        <label htmlhtmlFor="homeLayoutNo">No home layout</label>
                                     </div>
                                 </div>
                                 <div className="col-6">
                                     <div className="mb-5">
-                                        <input type="radio" id="homeLayoutYes" name="homeLayout" />
-                                        <label htmlFor="homeLayoutYes">Yes, I have a home layout</label>
+                                        <input type="radio" id="homeLayoutYes" name="homeLayout" required />
+                                        <label htmlhtmlFor="homeLayoutYes">Yes, I have a home layout</label>
                                     </div>
                                 </div>
                                 <div className="col-12">
@@ -107,43 +113,43 @@ const NewMember = (props) => {
                                 </div>
                                 <div className="col-4">
                                     <div className="mb-5">
-                                        <label for="steam">Steam Locomotives</label>
+                                        <label htmlFor="steam">Steam Locomotives</label>
                                         <input type="text" name="steam" id="steam" defaultValue="" placeholder="" />
                                     </div>
                                 </div>
                                 <div className="col-4">
                                     <div className="mb-5">
-                                        <label for="diesel">Diesel Locomotives</label>
+                                        <label htmlFor="diesel">Diesel Locomotives</label>
                                         <input type="text" name="diesel" id="diesel" defaultValue="" placeholder="" />
                                     </div>
                                 </div>
                                 <div className="col-4">
                                     <div className="mb-5">
-                                        <label for="trolleys">Trolleys</label>
+                                        <label htmlFor="trolleys">Trolleys</label>
                                         <input type="text" name="trolleys" id="trolleys" defaultValue="" placeholder="" />
                                     </div>
                                 </div>
                                 <div className="col-4">
                                     <div className="mb-5">
-                                        <label for="passengerCars">Passenger Cars</label>
+                                        <label htmlFor="passengerCars">Passenger Cars</label>
                                         <input type="text" name="passengerCars" id="passengerCars" defaultValue="" placeholder="" />
                                     </div>
                                 </div>
                                 <div className="col-4">
                                     <div className="mb-5">
-                                        <label for="freightCars">Freight Cars</label>
+                                        <label htmlFor="freightCars">Freight Cars</label>
                                         <input type="text" name="freightCars" id="freightCars" defaultValue="" placeholder="" />
                                     </div>
                                 </div>
                                 <div className="col-4">
                                     <div className="mb-5">
-                                        <label for="cabooses">Cabooses</label>
+                                        <label htmlFor="cabooses">Cabooses</label>
                                         <input type="text" name="cabooses" id="cabooses" defaultValue="" placeholder="" />
                                     </div>
                                 </div>
                                 <div className="col-12">
                                     <div className="mb-5">
-                                        <label for="specialInterests">Special Interests in the Hobby</label>
+                                        <label htmlFor="specialInterests">Special Interests in the Hobby</label>
                                         <textarea name="specialInterests" id="specialInterests" rows="6"></textarea>
                                     </div>
                                 </div>
@@ -152,27 +158,27 @@ const NewMember = (props) => {
                                 </div>
                                 <div className="col-6">
                                     <div className="mb-5">
-                                        <input type="radio" id="associationsNo" name="associations" defaultChecked />
-                                        <label htmlFor="associationsNo">No associations</label>
+                                        <input type="radio" id="associationsNo" name="associations" required />
+                                        <label htmlhtmlFor="associationsNo">No associations</label>
                                     </div>
                                 </div>
                                 <div className="col-6">
                                     <div className="mb-5">
-                                        <input type="radio" id="associationsYes" name="associations" />
-                                        <label htmlFor="associationsYes">Yes, I'm part of other associations</label>
+                                        <input type="radio" id="associationsYes" name="associations" required />
+                                        <label htmlhtmlFor="associationsYes">Yes, I'm part of other associations</label>
                                     </div>
                                 </div>
                                 <div className="col-12">
                                     <div className="mb-5">
-                                        <label for="scale">Railroad or model railroad publications you read regularly</label>
+                                        <label htmlFor="scale">Railroad or model railroad publications you read regularly</label>
                                         <input type="text" name="publications" id="publications" defaultValue="" placeholder="" />
                                     </div>
                                 </div>
                                 <div className="col-12">
                                     <div className="mb-5">
                                         <p>If accepted, I will abide by the rules set down by the members of the club.</p>
-                                        <input type="checkbox" id="rulesAgree" name="rulesAgree" />
-                                        <label htmlFor="rulesAgree">I agree</label>
+                                        <input type="checkbox" id="rulesAgree" name="rulesAgree" required />
+                                        <label htmlhtmlFor="rulesAgree">I agree</label>
                                     </div>
                                 </div>
                                 <div className="col-12">
