@@ -93,13 +93,13 @@ const NewMember = (props) => {
                                 <div className="col-6">
                                     <div className="mb-5">
                                         <input type="radio" id="homeLayoutNo" name="homeLayout" defaultChecked />
-                                        <label htmlFor="homeLayoutNo">No</label>
+                                        <label htmlFor="homeLayoutNo">No home layout</label>
                                     </div>
                                 </div>
                                 <div className="col-6">
                                     <div className="mb-5">
                                         <input type="radio" id="homeLayoutYes" name="homeLayout" />
-                                        <label htmlFor="homeLayoutYes">Yes</label>
+                                        <label htmlFor="homeLayoutYes">Yes, I have a home layout</label>
                                     </div>
                                 </div>
                                 <div className="col-12">
@@ -153,13 +153,13 @@ const NewMember = (props) => {
                                 <div className="col-6">
                                     <div className="mb-5">
                                         <input type="radio" id="associationsNo" name="associations" defaultChecked />
-                                        <label htmlFor="associationsNo">No</label>
+                                        <label htmlFor="associationsNo">No associations</label>
                                     </div>
                                 </div>
                                 <div className="col-6">
                                     <div className="mb-5">
                                         <input type="radio" id="associationsYes" name="associations" />
-                                        <label htmlFor="associationsYes">Yes</label>
+                                        <label htmlFor="associationsYes">Yes, I'm part of other associations</label>
                                     </div>
                                 </div>
                                 <div className="col-12">
