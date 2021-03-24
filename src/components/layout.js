@@ -36,8 +36,8 @@ class Layout extends React.Component {
     }
 
     render() {
-        const { children } = this.props
-
+        const { children, path } = this.props
+        console.log(this.props.path);
         return (
             <>
                 <Notice />
@@ -45,7 +45,7 @@ class Layout extends React.Component {
                     <div id="wrapper">
                         <Header onToggleMenu={this.handleToggleMenu} />
                         {children}
-                        <Contact />
+                        <Contact path={path} />
                         <Footer />
                     </div>
                     <Menu onToggleMenu={this.handleToggleMenu} />

@@ -4,13 +4,13 @@ import Layout from '../components/layout'
 
 import membershipApplication from '../assets/images/membershipApplication.jpg'
 
-const Generic = (props) => {
+const NewMember = (props) => {
     const [isSuccessful, setIsSuccessful] = useState(false);
     const [isError, setIsError] = useState(false);
 
     const handleSubmit = e => {
         e.preventDefault();
-        let myForm = document.getElementById('contactForm');
+        let myForm = document.getElementById('membershipApplication');
         let formData = new FormData(myForm)
         fetch('/', {
             method: 'POST',
@@ -21,7 +21,7 @@ const Generic = (props) => {
     }
 
     return (
-        <Layout>
+        <Layout path={props.path}>
             <SEO pageTitle="New Membership Application" />
             <div id="main" className="alt">
                 <section id="one">
@@ -190,4 +190,4 @@ const Generic = (props) => {
     )
 }
 
-export default Generic
+export default NewMember
