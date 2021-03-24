@@ -13,7 +13,7 @@ const NewMember = (props) => {
         let myForm = document.getElementById('membershipApplication');
         let formData = new FormData(myForm);
         console.log(formData);
-        fetch('/', {
+        fetch('/new-member/', {
             method: 'POST',
             headers: { "Content-Type": "application/x-www-form-urlencoded" },
             body: new URLSearchParams(formData).toString()
