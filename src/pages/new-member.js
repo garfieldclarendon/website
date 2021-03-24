@@ -13,7 +13,7 @@ const NewMember = (props) => {
         let myForm = document.getElementById('membershipApplication');
         let formData = new FormData(myForm);
         console.log(formData);
-        fetch('/new-member/', {
+        fetch('/', {
             method: 'POST',
             headers: { "Content-Type": "application/x-www-form-urlencoded" },
             body: new URLSearchParams(formData).toString()
@@ -32,7 +32,7 @@ const NewMember = (props) => {
                         </header>
                         <span className="image main"><img src={membershipApplication} alt="Members in the club room" /></span>
                         {isSuccessful && <p>Application submitted, thanks! We will reach out to you soon.</p>}
-                        {!isSuccessful && <form action="new-member-success" id="membershipApplication" method="post" data-netlify="true" netlify-honeypot="bot-field" onSubmit={handleSubmit}>
+                        {!isSuccessful && <form action="new-member-success" name="newMembership" id="membershipApplication" method="post" data-netlify="true" netlify-honeypot="bot-field" onSubmit={handleSubmit}>
                             <input type="hidden" name="form-name" value="newMembership" />
                             <div className="grid-wrapper">
                                 <div className="col-12">
