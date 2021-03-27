@@ -65,7 +65,7 @@ const Contact = (props) => {
                         <div className="contact-method">
                             <span className="icon alt fa-home"></span>
                             <h3>Address</h3>
-                            <span>4501 N. Clarendon Ave., Basement<br />
+                            <span>4501 N. Clarendon Ave.<br />
                         Chicago, IL 60640<br />
                         United States of America</span>
                         </div>
