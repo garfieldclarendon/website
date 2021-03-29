@@ -7,6 +7,7 @@
     "contentful": "^8.1.7",
     "date-fns": "^2.19.0",
     "dotenv": "^8.2.0",
+    "gatsby-plugin-google-gtag": "^3.1.0",
     "gatsby-plugin-manifest": "^2.2.4",
     "gatsby-plugin-offline": "^2.2.4",
     "gatsby-plugin-page-creator": "^2.1.5",
