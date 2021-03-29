@@ -4,9 +4,9 @@ export const onRenderBody = ({ setHeadComponents, setPostBodyComponents }) => {
     const pluginOptions = {
         head: true,
     };
-    if (process.env.NODE_ENV !== `production`) {
-        return null;
-    }
+    // if (process.env.NODE_ENV !== `production`) {
+    //     return null;
+    // }
 
     const setComponents = pluginOptions.head
         ? setHeadComponents
