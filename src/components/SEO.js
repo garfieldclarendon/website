@@ -12,7 +12,7 @@ function SEO({ pageTitle }) {
             <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico.png" />
             <link rel="canonical" href="http://www.garfieldcentral.org" />
             <meta property="og:site_name" content="Garfield-Clarendon Model Railroad Club  " />
-            <meta property="og:title" content="Garfield-Clarendon Model Railroad Club  " />
+            <meta property="og:title" content={pageTitle} />
             <meta property="og:url" content="http://www.garfieldcentral.org" />
             <meta property="og:type" content="website" />
             <meta property="og:description" content="The Garfield-Clarendon Model Railroad Club is a Chicago based HO scale model railroad club. We meet in the Clarendon Park Community Center in the Uptown neighborhood." />
@@ -25,7 +25,7 @@ function SEO({ pageTitle }) {
             <meta itemprop="thumbnailUrl" content="/garfieldClarendonSocialMedia.png" />
             <link rel="image_src" href="/garfieldClarendonSocialMedia.png" />
             <meta itemprop="image" content="/garfieldClarendonSocialMedia.png" />
-            <meta name="twitter:title" content="Garfield-Clarendon Model Railroad Club  " />
+            <meta name="twitter:title" content={pageTitle} />
             <meta name="twitter:image" content="/garfieldClarendonSocialMedia.png" />
             <meta name="twitter:url" content="http://www.garfieldcentral.org" />
             <meta name="twitter:card" content="summary" />
