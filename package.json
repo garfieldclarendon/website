@@ -7,6 +7,7 @@
     "contentful": "^8.1.7",
     "date-fns": "^2.19.0",
     "dotenv": "^8.2.0",
+    "gatsby-plugin-gatsby-cloud": "^2.5.0",
     "gatsby-plugin-google-gtag": "^3.1.0",
     "gatsby-plugin-manifest": "^2.2.4",
     "gatsby-plugin-offline": "^2.2.4",
@@ -27,7 +28,7 @@
   ],
   "license": "MIT",
   "scripts": {
-    "build": "gatsby build",
+    "build": "cross-env GATSBY_EXPERIMENTAL_PAGE_BUILD_ON_DATA_CHANGES=true gatsby build --log-pages",
     "develop": "gatsby develop",
     "format": "prettier --write '**/*.js'",
     "test": "echo \"Error: no test specified\" && exit 1"

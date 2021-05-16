@@ -10,6 +10,7 @@ module.exports = {
     description: 'A Gatsby.js Theme based on Forty by HTML5 UP',
   },
   plugins: [
+    'gatsby-plugin-gatsby-cloud',
     'gatsby-plugin-react-helmet',
     {
       resolve: `gatsby-plugin-page-creator`,
