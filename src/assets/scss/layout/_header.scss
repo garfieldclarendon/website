@@ -87,26 +87,12 @@
     height: inherit;
     line-height: inherit;
 
-    a {
-      border: 0;
-      display: block;
-      font-size: 0.8em;
-      height: inherit;
-      line-height: inherit;
-      padding: 0 0.75em;
-      position: relative;
-      vertical-align: middle;
-
-      &:focus {
-        outline: 3px solid rgba(155, 241, 255, 0.5);
-      }
-
-      &:last-child {
-        padding-right: 1.5em;
-      }
-
+    button {
       &.menu-link {
         background-color: rgba(255, 255, 255, 0.30);
+        box-shadow: none;
+        border: none;
+        outline: none;
         padding-right: 3.325em !important;
 
         &:before,
@@ -122,7 +108,7 @@
           height: 100%;
           position: absolute;
           right: 1.5em;
-          top: 0;
+          top: -5px;
           vertical-align: middle;
           width: 24px;
         }
@@ -154,6 +140,25 @@
             right: 2em;
           }
         }
+      }
+    }
+
+    a {
+      border: 0;
+      display: block;
+      font-size: 0.8em;
+      height: inherit;
+      line-height: inherit;
+      padding: 0 0.75em;
+      position: relative;
+      vertical-align: middle;
+
+      &:focus {
+        outline: 3px solid rgba(155, 241, 255, 0.5);
+      }
+
+      &:last-child {
+        padding-right: 1.5em;
       }
     }
   }
@@ -222,7 +227,7 @@
 
   @include breakpoint(xlarge) {
     nav {
-      a {
+      button {
         &.menu-link {
           padding-right: 3.75em !important;
 
@@ -236,7 +241,7 @@
 
   @include breakpoint(large) {
     nav {
-      a {
+      button {
         &.menu-link {
           padding-right: 4em !important;
 
@@ -257,13 +262,7 @@
     }
 
     nav {
-      a {
-        padding: 0 0.5em;
-
-        &:last-child {
-          padding-right: 1em;
-        }
-
+      button {
         &.menu-link {
           padding-right: 3.25em !important;
 
@@ -282,6 +281,13 @@
           }
         }
       }
+      a {
+        padding: 0 0.5em;
+
+        &:last-child {
+          padding-right: 1em;
+        }
+      }
     }
   }
 
@@ -293,7 +299,7 @@
     }
 
     nav {
-      a {
+      button {
         &.menu-link {
           overflow: hidden;
           padding-right: 0 !important;

@@ -19,7 +19,7 @@ const Menu = (props) => (
                 <li><a onClick={e => { e.preventDefault(); window.open('https://locomotivehouse.com', '_blank'); }} href="https://locomotivehouse.com" className="button fit">Member Log In</a></li>
             </ul>
         </div>
-        <a className="close" onClick={props.onToggleMenu} href="javascript:;">Close</a>
+        <button className="close" onClick={props.onToggleMenu}>Close</button>
     </nav>
 )
 

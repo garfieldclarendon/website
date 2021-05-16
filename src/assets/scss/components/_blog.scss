@@ -1,0 +1,23 @@
+.featuredImage {
+    .gatsby-image-wrapper {
+        position: relative;
+        top: -50%;
+    }
+    height: 350px;
+    margin-bottom: 32px;
+    overflow: hidden;
+
+    @include breakpoint(small) {
+        height: 150px;
+    }
+}
+
+.blogPost {
+    p {
+        clear: both;
+    }
+}
+
+iframe {
+    width: 100%;
+}

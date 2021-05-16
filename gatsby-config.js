@@ -10,7 +10,27 @@ module.exports = {
     description: 'A Gatsby.js Theme based on Forty by HTML5 UP',
   },
   plugins: [
+    'gatsby-plugin-image',
+    'gatsby-plugin-sharp',
+    'gatsby-transformer-sharp',
     // 'gatsby-plugin-gatsby-cloud',
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          {
+            resolve: `gatsby-remark-images-contentful`,
+            options: {
+              // It's important to specify the maxWidth (in pixels) of
+              // the content container as this plugin uses this as the
+              // base for generating different widths of each image.
+              maxWidth: 1200,
+            },
+          },
+          'gatsby-remark-responsive-iframe'
+        ],
+      },
+    },
     'gatsby-plugin-react-helmet',
     {
       resolve: `gatsby-plugin-page-creator`,
@@ -28,6 +48,7 @@ module.exports = {
         richText: {
           resolveFieldLocales: true,
         },
+        environment: process.env.NODE_ENV === 'development' ? 'development' : 'master',
       },
     },
     {
