@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'gatsby'
 import { BLOCKS, MARKS } from "@contentful/rich-text-types"
 import { renderRichText } from "gatsby-source-contentful/rich-text"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
@@ -26,7 +27,6 @@ export default function Blog({ data, pageContext }) {
                 return null;
             },
             [BLOCKS.EMBEDDED_ASSET]: node => {
-                console.log(node);
                 const image = getImage(node.data.target.gatsbyImageData);
                 return (
                     <div className="box">
@@ -60,6 +60,7 @@ export default function Blog({ data, pageContext }) {
                                     height={200}
                                 /></div>}
                                 {renderRichText(pageContext.data.body, options)}
+                                <Link to="/blog" className="button">&lt; More Articles</Link>
                             </article>
                         </div>
                     </section>

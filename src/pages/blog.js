@@ -1,5 +1,6 @@
 import React from 'react'
 import { graphql, useStaticQuery, Link } from 'gatsby'
+import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import SEO from '../components/SEO'
 import Layout from '../components/layout'
 
@@ -18,6 +19,10 @@ const Generic = (props) => {
                         slug
                         id
                         updatedAt
+                        featuredImage {
+                            title
+                            gatsbyImageData
+                        }
                     }
                 }
             }
@@ -37,9 +42,15 @@ const Generic = (props) => {
                         {data.allContentfulBlog.nodes.map(blogPost => {
                             const bodyJSON = JSON.parse(blogPost.body.raw);
                             const firstParagraph = bodyJSON.content.filter(item => item.nodeType === 'paragraph')[0];
+                            const featuredImage = getImage(blogPost.featuredImage)
                             return (
                                 <article key={blogPost.id}>
                                     <h2><Link to={`/blog/${blogPost.slug}`}>{blogPost.articleTitle}</Link></h2>
+                                    {featuredImage && <div className="featuredImage"><GatsbyImage
+                                        image={featuredImage}
+                                        alt={blogPost.featuredImage.title}
+                                        height={200}
+                                    /></div>}
                                     <p>{firstParagraph.content[0].value}</p>
                                     <p><Link className="button" to={`/blog/${blogPost.slug}`}>Read More</Link></p>
                                 </article>
