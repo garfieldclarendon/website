@@ -3,9 +3,11 @@ import React, { useState } from 'react'
 const Contact = (props) => {
     const [isSuccessful, setIsSuccessful] = useState(false);
     const [isError, setIsError] = useState(false);
+    const [isDisabled, setIsDisabled] = useState(false);
 
     const handleSubmit = e => {
         e.preventDefault();
+        setIsDisabled(true);
         let myForm = document.getElementById('contactForm');
         let formData = new FormData(myForm)
         fetch('/', {
@@ -41,7 +43,7 @@ const Contact = (props) => {
                         </div>
                         <div data-netlify-recaptcha="true"></div>
                         <ul className="actions">
-                            <li><input type="submit" value="Send Message" className="special" /></li>
+                            <li><input type="submit" value="Send Message" className="special" disabled={isDisabled} /></li>
                             <li><input type="reset" value="Clear" /></li>
                         </ul>
                     </form>
