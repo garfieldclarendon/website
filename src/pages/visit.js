@@ -12,7 +12,7 @@ const Landing = () => (
         <div id="main">
             <section id="one">
                 <div className="inner">
-                    <p style={{ backgroundColor: "#cc0719", color: 'white', textAlign: 'center', padding: '10px' }}>We are currently closed to visitors due to Covid. Updated: May 27th 2021.</p>
+                    <p style={{ backgroundColor: "#cc0719", color: 'white', textAlign: 'center', padding: '10px' }}>We are currently closed to visitors due to Covid. Updated: November 21th 2021.</p>
                     <header className="major">
                         <h2>Hours</h2>
                     </header>
