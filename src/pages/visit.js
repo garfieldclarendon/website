@@ -7,20 +7,19 @@ import williamsport from '../assets/images/williamsport.jpeg'
 const Landing = () => (
     <Layout>
         <SEO pageTitle="Visit" />
-        <BannerLanding style="visitors" title="Visitors are always welcome" description="Located in the Clarendon Park Community Center in Uptown, Chicago" />
+        <BannerLanding style="visitors" title="We Are Closed to Visitors" description="Located in the Clarendon Park Community Center in Uptown, Chicago" />
 
         <div id="main">
             <section id="one">
                 <div className="inner">
-                    <p style={{ backgroundColor: "#cc0719", color: 'white', textAlign: 'center', padding: '10px' }}>We are currently closed to visitors due to Covid. Updated: November 21th 2021.</p>
                     <header className="major">
                         <h2>Hours</h2>
                     </header>
-                    <p>We're open every Friday except the first occurance for the month, which is our meeting night. You will usually find a variety of trains running, especially on the last Friday of the month - which tends to be operations night. We are open from <b>7PM - 9:00PM</b> unless otherwise noted.</p>
+                    <p>Due to current limitations beyond our control, we are closed for the foreseeable future. Please check back later.</p>
                 </div>
             </section>
             <section id="two" className="spotlights">
-                <section>
+                {/* <section>
                     <div className="image">
                         <img src={williamsport} alt="Williamsport" />
                     </div>
@@ -53,7 +52,7 @@ const Landing = () => (
                             <p>Plenty of parking is available in the lot adjacent to the building. Street parking is also available on Marine Dr. and Clarendon Ave.</p>
                         </div>
                     </div>
-                </section>
+                </section> */}
             </section>
         </div>
 

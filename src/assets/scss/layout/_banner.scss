@@ -41,6 +41,10 @@
 			@include vendor('background-image', 'url("../images/blackstoneLobby.jpg")');
 		}
 
+		&.travelingLayout {
+			@include vendor('background-image', 'url("../images/goTrain.jpeg")');
+		}
+
 		&.visitors {
 			@include vendor('background-image', 'url("../images/visitors.jpeg")');
 		}
