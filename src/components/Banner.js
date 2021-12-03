@@ -12,8 +12,7 @@ const Banner = props => (
         </p>
         <ul className="actions">
           <li>
-            <a href="/chicago-traveling-layout" name="Learn About Our Traveling Layout" className="button next scrolly">
-              Learn About Our Traveling Layout
+            <a href="/chicago-traveling-layout" name="Learn About Our Traveling Layout" className="button next scrolly">Traveling Layout
             </a>
           </li>
         </ul>
