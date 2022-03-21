@@ -57,7 +57,7 @@ const Landing = () => {
             <p>Fridays 5:30 PM to 7PM.</p>
             {!isSuccessful && (
               <form
-                action="new-vist-success"
+                action="visitApplication-success"
                 name="newVisit"
                 id="visitApplication"
                 method="post"
