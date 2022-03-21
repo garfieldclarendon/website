@@ -57,19 +57,15 @@ const Landing = () => {
             <p>Fridays 5:30 PM to 7PM.</p>
             {!isSuccessful && (
               <form
-                action="visitApplication-success"
-                name="newVisit"
-                id="visitApplication"
+                action="visit-success"
+                name="visit"
+                id="visit"
                 method="post"
                 data-netlify="true"
                 netlify-honeypot="bot-field"
                 onSubmit={handleSubmit}
               >
-                <input
-                  type="hidden"
-                  name="form-name"
-                  value="visitApplication"
-                />
+                <input type="hidden" name="form-name" value="visit" />
                 <div className="grid-wrapper">
                   <div className="col-12">
                     <p>
