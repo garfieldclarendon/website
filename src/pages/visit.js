@@ -21,7 +21,7 @@ const Landing = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    let myForm = document.getElementById('visitApplication')
+    let myForm = document.getElementById('visit')
     let formData = new FormData(myForm)
     fetch('/', {
       method: 'POST',
