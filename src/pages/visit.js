@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import Layout from '../components/layout'
 import BannerLanding from '../components/BannerLanding'
 import SEO from '../components/SEO'
@@ -38,6 +38,23 @@ const Landing = () => {
       .catch((error) => setIsSuccessful(false))
   }
 
+  useEffect(() => {
+    var exampleCallback = function () {
+      console.log('Order complete!')
+    }
+
+    window.EBWidgets.createWidget({
+      // Required
+      widgetType: 'checkout',
+      eventId: '308246332077',
+      iframeContainerId: 'eventbrite-widget-container-308246332077',
+
+      // Optional
+      iframeContainerHeight: 425, // Widget height in pixels. Defaults to a minimum of 425px if not provided
+      onOrderComplete: exampleCallback, // Method called when an order has successfully completed
+    })
+  }, [])
+
   return (
     <Layout>
       <SEO pageTitle="Visit" />
@@ -55,89 +72,13 @@ const Landing = () => {
               <h2>Hours</h2>
             </header>
             <p>Fridays 5:30 PM to 7PM.</p>
-            {!isSuccessful && (
-              <form
-                action="visit-success"
-                name="visit"
-                id="visit"
-                method="post"
-                data-netlify="true"
-                netlify-honeypot="bot-field"
-                onSubmit={handleSubmit}
-              >
-                <input type="hidden" name="form-name" value="visit" />
-                <div className="grid-wrapper">
-                  <div className="col-12">
-                    <p>
-                      All visitors must RSVP to ensure availability of members
-                      and for capacity restrictions.
-                    </p>
-                  </div>
-                  <div className="col-6">
-                    <div className="mb-5">
-                      <label htmlFor="name">Name</label>
-                      <input
-                        type="text"
-                        name="name"
-                        id="name"
-                        defaultValue=""
-                        placeholder="Name"
-                        required
-                      />
-                    </div>
-                  </div>
-                  <div className="col-6">
-                    <div className="mb-5">
-                      <label htmlFor="email">Email</label>
-                      <input
-                        type="text"
-                        name="email"
-                        id="email"
-                        defaultValue=""
-                        placeholder="Email"
-                        required
-                      />
-                    </div>
-                  </div>
-                  <div className="col-12">
-                    <div className="mb-5">
-                      <div className="select-wrapper mb-5">
-                        <select name="date" id="date">
-                          <option defaultValue="">- Date -</option>
-                          <option value={format(thisFriday, 'yyyy-MM-dd')}>
-                            {format(thisFriday, 'yyyy-MM-dd')}
-                          </option>
-                          <option value={format(nextFriday, 'yyyy-MM-dd')}>
-                            {format(nextFriday, 'yyyy-MM-dd')}
-                          </option>
-                        </select>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col-12">
-                    <div className="mb-5">
-                      <label htmlFor="numberOfGuests">Number of guests</label>
-                      <input
-                        type="text"
-                        name="numberOfGuests"
-                        id="numberOfGuests"
-                        defaultValue=""
-                        placeholder="1"
-                        required
-                      />
-                    </div>
-                  </div>
-                  <div className="col-12">
-                    {isError && <p>There was an issue, please try again.</p>}
-                    <ul className="actions">
-                      <li>
-                        <button type="submit">Submit RSVP</button>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </form>
-            )}
+            <p>
+              <b>
+                All visitors must obtain a free ticket to ensure availability of
+                members and for capacity restrictions.
+              </b>
+            </p>
+            <div id="eventbrite-widget-container-308246332077"></div>
           </div>
         </section>
         <section id="two" className="spotlights">
