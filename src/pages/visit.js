@@ -46,8 +46,8 @@ const Landing = () => {
     window.EBWidgets.createWidget({
       // Required
       widgetType: 'checkout',
-      eventId: '308246332077',
-      iframeContainerId: 'eventbrite-widget-container-308246332077',
+      eventId: '395872343837',
+      iframeContainerId: 'eventbrite-widget-container-395872343837',
 
       // Optional
       iframeContainerHeight: 425, // Widget height in pixels. Defaults to a minimum of 425px if not provided
