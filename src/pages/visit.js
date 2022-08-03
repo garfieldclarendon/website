@@ -78,7 +78,7 @@ const Landing = () => {
                 members and for capacity restrictions.
               </b>
             </p>
-            <div id="eventbrite-widget-container-308246332077"></div>
+            <div id="eventbrite-widget-container-395872343837"></div>
           </div>
         </section>
         <section id="two" className="spotlights">
