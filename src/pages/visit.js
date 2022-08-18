@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import Layout from '../components/layout'
+import { Link } from 'gatsby'
 import BannerLanding from '../components/BannerLanding'
 import SEO from '../components/SEO'
 import williamsport from '../assets/images/williamsport.jpeg'
@@ -61,12 +62,27 @@ const Landing = () => {
       <BannerLanding
         bannerColor="grey"
         style="visitors"
-        title="Visitors Welcome with Reservation"
+        title="Currently Closed for Renovation"
         description="Located in the Clarendon Park Community Center in Uptown, Chicago"
       />
 
       <div id="main">
         <section id="one">
+          <div className="inner">
+            <header className="major">
+              <h2>Closed Until 2024</h2>
+            </header>
+            <p>The building we are in is under renovation. See you in 2024.</p>
+            <ul className="actions">
+              <li>
+                <Link to="/renovation" className="button">
+                  Preview the Renovations
+                </Link>
+              </li>
+            </ul>
+          </div>
+        </section>
+        {/* <section id="one">
           <div className="inner">
             <header className="major">
               <h2>Hours</h2>
@@ -80,9 +96,9 @@ const Landing = () => {
             </p>
             <div id="eventbrite-widget-container-395872343837"></div>
           </div>
-        </section>
+        </section> */}
         <section id="two" className="spotlights">
-          <section>
+          {/* <section>
             <div className="image">
               <img src={williamsport} alt="Williamsport" />
             </div>
@@ -104,8 +120,8 @@ const Landing = () => {
                 </p>
               </div>
             </div>
-          </section>
-          <section>
+          </section> */}
+          {/* <section>
             <div className="image">
               <iframe
                 title="Google Map of Garfield-Clarendon Location"
@@ -142,7 +158,7 @@ const Landing = () => {
                 </p>
               </div>
             </div>
-          </section>
+          </section> */}
         </section>
       </div>
     </Layout>

@@ -11,11 +11,11 @@ const Banner = (props) => (
         <ul className="actions">
           <li>
             <a
-              href="/visit"
-              name="Plan Your Visit"
+              href="/renovation"
+              name="Closed for Renovation"
               className="button next scrolly"
             >
-              Visit Us
+              Under Renovation
             </a>
           </li>
         </ul>
