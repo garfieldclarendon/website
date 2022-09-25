@@ -76,6 +76,13 @@
     @include vendor('background-image', 'url("../images/renovation.png")');
   }
 
+  &.modules {
+    @include vendor(
+      'background-image',
+      'url("../images/modules/ModuleExample.jpg")'
+    );
+  }
+
   &.openHouses {
     @include vendor('background-image', 'url("../images/openHouses.jpg")');
   }
