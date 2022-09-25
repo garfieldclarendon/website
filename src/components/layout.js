@@ -39,7 +39,7 @@ class Layout extends React.Component {
     const { children, path } = this.props
     return (
       <>
-        <Notice />
+        {/* <Notice /> */}
         <div
           className={`body ${this.state.loading} ${
             this.state.isMenuVisible ? 'is-menu-visible' : ''
