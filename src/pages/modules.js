@@ -4,6 +4,7 @@ import Layout from '../components/layout'
 import BannerLanding from '../components/BannerLanding'
 
 import straightModule from '../assets/images/modules/straightModule.png'
+import cornerModule from '../assets/images/modules/corner-module.png'
 
 const Modules = () => {
   return (
@@ -34,12 +35,13 @@ const Modules = () => {
             <header className="major">
               <h2>Module Scemantics</h2>
             </header>
-            <p>
-              The straight track module is listed below. The curved module is
-              being re-worked.
-            </p>
+            <p>The straight track module is listed below.</p>
             <div className="image" style={{ backgroundColor: '#FFF' }}>
-              <img src={straightModule} alt="Straight Module" width={800} />
+              <img src={straightModule} alt="Straight Module" width="100%" />
+            </div>
+            <p>The corner track module is listed below.</p>
+            <div className="image" style={{ backgroundColor: '#FFF' }}>
+              <img src={cornerModule} alt="Corner Module" width="100%" />
             </div>
           </div>
         </section>
@@ -51,6 +53,10 @@ const Modules = () => {
             <ul>
               <li>6” from the front edge measured from center of the track</li>
               <li>Single track main line with passing sidings</li>
+              <li>
+                Doulble track centerlines shall be spaced precisely 2 inches
+                apart
+              </li>
               <li>Code 83 track main, 70 possible on sidings</li>
               <li>Micro-engineering or Peco brands</li>
               <li>Cork roadbed</li>
@@ -115,6 +121,16 @@ const Modules = () => {
             </header>
             <ul>
               <li>40” height without levelers, with 40.5”</li>
+            </ul>
+          </div>
+        </section>
+        <section id="six">
+          <div className="inner">
+            <header className="major">
+              <h2>Scenery</h2>
+            </header>
+            <ul>
+              <li>Ballast should be Woodland Scenics fine gray blend</li>
             </ul>
           </div>
         </section>
