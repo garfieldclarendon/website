@@ -74,7 +74,7 @@ const Modules = () => {
               </li>
               <li>Peco or Walthers turnouts - #6 on main, #5 on sidings</li>
               <li>Joiner track is 2” from end - 4” long track</li>
-              <li>Use Micro-engineering joiners</li>
+              <li>Use of Micro-engineering joiners suggested</li>
             </ul>
           </div>
         </section>
@@ -131,7 +131,81 @@ const Modules = () => {
             </header>
             <ul>
               <li>Ballast should be Woodland Scenics fine gray blend</li>
+              <li>
+                The base layer of "soil" should be{' '}
+                <a href="https://www.homedepot.com/p/Custom-Building-Products-Prism-105-Earth-17-lb-Grout-PG10517T/202753902">
+                  Prism #105 Earth
+                </a>
+              </li>
+              <li>
+                Ground foam at the ends where it touches other modules should be{' '}
+                <a href="https://www.sceneryexpress.com/SCRUB-GRASS-BLEND-32-oz/productinfo/EX882B/">
+                  Scenics Express Scrub Grass Blend
+                </a>
+                . This is a very forgiving mix that covers well and has much
+                visual variety to make scenes more interesting. Feather this mix
+                into whatever colors you choose for other parts of your module.
+                Suggested mixes are listed below.
+              </li>
+              <li>
+                Facade paint will be{' '}
+                <a href="https://www.sherwin-williams.com/en-us/color/color-family/orange-paint-colors/SW6104-kaffee">
+                  Sherwin-Williams Kaffee
+                </a>
+              </li>
             </ul>
+            <p>
+              Track paint will use the Woodland Scencis paint pens detailed{' '}
+              <a href="https://woodlandscenics.woodlandscenics.com/show/category/TrackPainters">
+                here
+              </a>
+              .
+            </p>
+            <ul>
+              <li>Steel rail is used for main lines</li>
+              <li>Rusty rail is used for spurs</li>
+              <li>Weathered tie is used for all ties</li>
+            </ul>
+            <p>
+              Woodland Sceneics and Scenic Express offer a variety of mixes that
+              make excellet scenery. Here are a few suggestions.
+            </p>
+            <ul>
+              <li>
+                Scenic Express Green Grass Blend, great for lawns and parks that
+                a slightly un-kept
+              </li>
+              <li>
+                Scenic Express Summer Lawn Blend, great for lawns and parks that
+                are highly maintained
+              </li>
+              <li>
+                Scenics Express Farm Pasture Blend, use in farm scenes and as an
+                alterantive to scrub grass
+              </li>
+              <li>
+                Woodland Scenics Green Grass, Burnt Grass, and Weeds are nice
+                mix-ins
+              </li>
+            </ul>
+            <p>
+              There are too many static grass options to list and frankly, you
+              can't go wrong. The key is to pick three or so colors and sizes
+              and use them randomly on a field.
+            </p>
+            <p>
+              Static grass tufts are great to use in addition to larger patches
+              of static grass. Etsy is a great place to buy these, often branded
+              for "Wargaming". Take a look at this{' '}
+              <a href="https://www.etsy.com/listing/780464328/self-adhesive-static-grass-tufts-for?ga_order=most_relevant&ga_search_type=all&ga_view_type=gallery&ga_search_query=static+grass+tufts&ref=sr_gallery-1-1&frs=1&cns=1&sts=1&organic_search_click=1">
+                example
+              </a>{' '}
+              or{' '}
+              <a href="https://www.etsy.com/listing/1158417351/grass-tufts-4-6-mm-meadow-grass?click_key=40909e3d36635f7430e0f4ae95076de458d6f106%3A1158417351&click_sum=db724c94&ref=internal_similar_listing_bot-1&sts=1&listing_id=1158417351&listing_slug=grass-tufts-4-6-mm-meadow-grass">
+                this one
+              </a>
+              .
+            </p>
           </div>
         </section>
       </div>
