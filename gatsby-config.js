@@ -1,5 +1,5 @@
 const path = require('path')
-require("dotenv").config({
+require('dotenv').config({
   path: `.env.${process.env.NODE_ENV}`,
 })
 
@@ -15,6 +15,19 @@ module.exports = {
     'gatsby-transformer-sharp',
     // 'gatsby-plugin-gatsby-cloud',
     {
+      resolve: `gatsby-plugin-posthog`,
+      options: {
+        // Specify the API key for your PostHog Project (required)
+        apiKey: `${process.env.POSTHOG_API_KEY}`,
+        // Specify the app host if self-hosting (optional, default: https://app.posthog.com)
+        apiHost: `${process.env.POSTHOG_PROJECT_ID}`,
+        // Puts tracking script in the head instead of the body (optional, default: true)
+        head: true,
+        // Enable posthog analytics tracking during development (optional, default: false)
+        isEnabledDevMode: true,
+      },
+    },
+    {
       resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [
@@ -27,7 +40,7 @@ module.exports = {
               maxWidth: 1200,
             },
           },
-          'gatsby-remark-responsive-iframe'
+          'gatsby-remark-responsive-iframe',
         ],
       },
     },
@@ -48,15 +61,14 @@ module.exports = {
         richText: {
           resolveFieldLocales: true,
         },
-        environment: process.env.NODE_ENV === 'development' ? 'development' : 'master',
+        environment:
+          process.env.NODE_ENV === 'development' ? 'development' : 'master',
       },
     },
     {
       resolve: `gatsby-plugin-google-gtag`,
       options: {
-        trackingIds: [
-          "UA-61549882-1",
-        ],
+        trackingIds: ['UA-61549882-1'],
       },
     },
   ],
