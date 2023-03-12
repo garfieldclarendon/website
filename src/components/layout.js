@@ -17,43 +17,50 @@ class Layout extends React.Component {
       loading: 'is-loading',
     }
     this.handleToggleMenu = this.handleToggleMenu.bind(this)
-    const cookieConfig = {
-      policies: [
-        {
-          id: 'social',
-          label: 'Social Media Cookies',
-          category: 'social',
-          description:
-            'We need to save some social cookies, for the website to function properly.',
-        },
-      ],
-      essentialLabel: 'Always on',
-      permissionLabels: {
-        accept: 'Accept',
-        acceptAll: 'Accept all',
-        decline: 'Decline',
-      },
-      cookiePreferenceKey: 'cookie-preferences',
-      header: {
-        title: 'cookie though?',
-        subTitle: "You're probably fed up with these banners...",
-        description:
-          'Everybody wants to show his best side - and so do we. That’s why we use cookies to guarantee you a better experience.',
-      },
-      cookiePolicy: {
-        url: 'https://inthepocket.com/cookie-policy',
-        label: 'Read the full cookie declaration',
-      },
-      customizeLabel: 'Customize',
-    }
-
-    init(cookieConfig)
   }
 
   componentDidMount() {
     this.timeoutId = setTimeout(() => {
       this.setState({ loading: '' })
     }, 100)
+    if (typeof document !== undefined) {
+      const cookieConfig = {
+        policies: [
+          {
+            id: 'social',
+            label: 'Social Media Cookies',
+            category: 'social',
+            description:
+              'We need to save some social cookies, for the website to function properly.',
+          },
+        ],
+        essentialLabel: 'Always on',
+        permissionLabels: {
+          accept: 'Accept',
+          acceptAll: 'Accept all',
+          decline: 'Decline',
+        },
+        cookiePreferenceKey: 'cookie-preferences',
+        header: {
+          title: 'Accept cookies?',
+          subTitle: "You're probably fed up with these banners...",
+          description: 'We use cookies to better understand our audience.',
+        },
+        cookiePolicy: {
+          url: 'https://inthepocket.com/cookie-policy',
+          label: 'Read the full cookie declaration',
+        },
+        customizeLabel: 'Customize',
+      }
+
+      init(cookieConfig)
+
+      onPreferencesChanged((preferences) => {
+        if (preferences && !preferences.cookieOptions[0].isEnabled) {
+          posthog.opt_out_capturing()
+        }
+      })
+    }
   }
 
   componentWillUnmount() {
@@ -69,12 +76,6 @@ class Layout extends React.Component {
   }
 
   render() {
-    onPreferencesChanged((preferences) => {
-      if (preferences && !preferences.cookieOptions[0].isEnabled) {
-        posthog.opt_out_capturing()
-      }
-    })
-
     const { children, path } = this.props
     return (
       <>
