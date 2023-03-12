@@ -18,6 +18,9 @@ const Landing = () => {
             title
             startTime
             endTime
+            link {
+              link
+            }
           }
         }
       }
@@ -68,6 +71,15 @@ const Landing = () => {
                         Open From {openHouse.startTime} - {openHouse.endTime}
                       </h4>
                       <p>{openHouse.description.description}</p>
+                      {openHouse.link && (
+                        <ul className="actions">
+                          <li>
+                            <a href={openHouse.link.link} className="button">
+                              View Details
+                            </a>
+                          </li>
+                        </ul>
+                      )}
                     </div>
                   )
                 })}
