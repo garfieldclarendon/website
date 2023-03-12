@@ -1,6 +1,5 @@
 import React from 'react'
 import { init, onPreferencesChanged } from 'cookie-though'
-import posthog from 'posthog-js'
 
 import '../assets/scss/main.scss'
 import Header from './Header'
@@ -57,7 +56,7 @@ class Layout extends React.Component {
 
       onPreferencesChanged((preferences) => {
         if (preferences && !preferences.cookieOptions[0].isEnabled) {
-          posthog.opt_out_capturing()
+          window.posthog.opt_out_capturing()
         }
       })
     }

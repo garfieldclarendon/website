@@ -24,7 +24,7 @@ module.exports = {
         // Puts tracking script in the head instead of the body (optional, default: true)
         head: true,
         // Enable posthog analytics tracking during development (optional, default: false)
-        isEnabledDevMode: true,
+        isEnabledDevMode: false,
       },
     },
     {
