@@ -29,11 +29,9 @@ const HolidayTrains = (props) => (
     <div id="main" className="alt">
       <section id="one" className="spotlights">
         <section>
-          <img
-            className="image fit"
-            src={event1}
-            alt="A minature scene of a sanding pit"
-          />
+          <div className="image">
+            <img src={event1} alt="A minature scene of a sanding pit" />
+          </div>
           <div className="content">
             <div className="inner">
               <header className="major">
@@ -64,11 +62,9 @@ const HolidayTrains = (props) => (
           </div>
         </section>
         <section>
-          <img
-            className="image fit"
-            src={event2}
-            alt="A Milwuakee Road Passger Train"
-          />
+          <div className="image">
+            <img src={event2} alt="A Milwuakee Road Passger Train" />
+          </div>
           <div className="content">
             <div className="inner">
               <header className="major">
