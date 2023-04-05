@@ -42,7 +42,7 @@ class Layout extends React.Component {
         cookiePreferenceKey: 'cookie-preferences',
         header: {
           title: 'Accept cookies?',
-          subTitle: "You're probably fed up with these banners...",
+          subTitle: '',
           description: 'We use cookies to better understand our audience.',
         },
         cookiePolicy: {
