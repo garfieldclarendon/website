@@ -47,12 +47,12 @@ const Notice = () => {
       {(hasOpenHouses || showOpenMessage) && (
         <div className="noticeBar">
           <p>
-            {showOpenMessage && (
+            {/* {showOpenMessage && (
               <>
                 <b>Open on Friday (with RSVP):</b> 5:30PM - 7PM{' '}
                 <Link to="/visit">Learn More</Link>
               </>
-            )}
+            )} */}
             {hasOpenHouses && (
               <>
                 <b>Next event:</b> {format(theDate, 'EEEE MMM-do')}{' '}
