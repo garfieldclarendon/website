@@ -9,7 +9,7 @@ const Notice = () => {
   const data = useStaticQuery(
     graphql`
       query OpenHouseDates {
-        allContentfulOpenHouses {
+        allContentfulOpenHouses(limit: 1) {
           nodes {
             date
           }
