@@ -55,7 +55,8 @@ const Notice = () => {
             )} */}
             {hasOpenHouses && (
               <>
-                <b>Next event:</b> {format(theDate, 'EEEE MMM-do')}{' '}
+                <b>Next event:</b> {/* format(theDate, 'EEEE MMM-do') */}
+                {' Saturday Aug 19th'}
                 <Link to="/open-houses">Learn More</Link>
               </>
             )}
