@@ -44,25 +44,25 @@ const Notice = () => {
     <BodyClassName
       className={hasOpenHouses || showOpenMessage ? 'hasNoticeBar' : ''}
     >
-      {(hasOpenHouses || showOpenMessage) && (
-        <div className="noticeBar">
-          <p>
-            {/* {showOpenMessage && (
+      {/*(hasOpenHouses || showOpenMessage) && (*/}
+      <div className="noticeBar">
+        <p>
+          {/* {showOpenMessage && (
               <>
                 <b>Open on Friday (with RSVP):</b> 5:30PM - 7PM{' '}
                 <Link to="/visit">Learn More</Link>
               </>
             )} */}
-            {/* hasOpenHouses && ( */}
-            <>
-              <b>Next event:</b> {/* format(theDate, 'EEEE MMM-do') */}
-              {' Sunday Aug 20th'}
-              <Link to="/open-houses">Learn More</Link>
-            </>
-            {/*)*/}
-          </p>
-        </div>
-      )}
+          {/* hasOpenHouses && ( */}
+          <>
+            <b>Next event:</b> {/* format(theDate, 'EEEE MMM-do') */}
+            {' Sunday Aug 20th'}
+            <Link to="/open-houses">Learn More</Link>
+          </>
+          {/*)*/}
+        </p>
+      </div>
+      {/* }) */}
     </BodyClassName>
   )
 }
