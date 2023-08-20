@@ -53,13 +53,13 @@ const Notice = () => {
                 <Link to="/visit">Learn More</Link>
               </>
             )} */}
-            {hasOpenHouses && (
-              <>
-                <b>Next event:</b> {/* format(theDate, 'EEEE MMM-do') */}
-                {' Saturday Aug 19th'}
-                <Link to="/open-houses">Learn More</Link>
-              </>
-            )}
+            {/* hasOpenHouses && ( */}
+            <>
+              <b>Next event:</b> {/* format(theDate, 'EEEE MMM-do') */}
+              {' Sunday Aug 20th'}
+              <Link to="/open-houses">Learn More</Link>
+            </>
+            {/*)*/}
           </p>
         </div>
       )}
