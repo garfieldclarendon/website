@@ -55,7 +55,21 @@ const Landing = () => {
             <div className="grid-wrapper">
               {futureDates.length === 0 && (
                 <p className="col-6">
-                  <em>No events schedule, please check back.</em>
+                  <h3>Margate Park Layout Display - Sunday Aug-20th 2023</h3>
+                  <h4>Open From 11AM - 2:30PM</h4>
+                  <p>
+                    Join us at Margate Park to see our portable modular layout.
+                    August 19th and 20th. Noon - 4pm on Saturday and 11AM -
+                    2:30PM Sunday.
+                  </p>
+                  <ul className="actions">
+                    <li>
+                      <a href="/events/margate-park/" className="button">
+                        View Details
+                      </a>
+                    </li>
+                  </ul>
+                  {/* <em>No events schedule, please check back.</em> */}
                 </p>
               )}
               {futureDates &&
