@@ -27,7 +27,7 @@ const Landing = () => {
     `
   )
   const futureDates = data.allContentfulOpenHouses.nodes.filter(
-    (item) => toDate(new Date(item.date)) > new Date()
+    (item) => toDate(new Date(item.date)) >= new Date()
   )
   const pastEvents = data.allContentfulOpenHouses.nodes.filter(
     (item) => toDate(new Date(item.date)) < new Date()
