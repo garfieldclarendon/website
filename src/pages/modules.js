@@ -24,16 +24,41 @@ const Modules = () => {
             </header>
             <p>
               Listed on this page are the module standards we have agreed to as
-              a club. They are loosely influenced by other standards but not
-              entirely. They might work for you but are suited for our
-              particular use-cases.
+              a club. They are loosely influenced by other standards like
+              Free-Mo. We like other standards but chose to create our own for
+              our unique uses and desires. Please do not consider our standards
+              as a slight towards any other standards.
+            </p>
+            <p>
+              Some of the main differences you will find are within our corner
+              construction, track placements, and DCC plugs. Our standards are
+              meant to work with Free-Mo or other standards with adaptors. We
+              welcome any modules from other standards if they can fit within
+              our setups. We removed DCC plugs in favor of Wifi throttles, which
+              have greatly simplified operations, setup, and wiring.
+            </p>
+            <p>
+              Our corners are less spacious than other standards. We sought to
+              create ones that nest within each other for easy storage and
+              transport. A set of four corners can easily fit within a
+              hatchback! At a 31" radius, our corners still look pretty good
+              with longer passenger cars while still being easily transportable.
+              This also allows flexibility to create a small layout in more
+              spaces.
+            </p>
+            <p>
+              We chose to not center tracks within modules. This brings the
+              action closer to viewers. It also allows for more spacious areas
+              in the background for industries, scenes, and switching. Some
+              members opt to extend scenery into the public's viewing area with
+              detachable scenery blocks. These are acceptable.
             </p>
           </div>
         </section>
         <section id="two">
           <div className="inner">
             <header className="major">
-              <h2>Module Scemantics</h2>
+              <h2>Module Schematics</h2>
             </header>
             <p>The straight track module is listed below.</p>
             <div className="image" style={{ backgroundColor: '#FFF' }}>
@@ -48,33 +73,81 @@ const Modules = () => {
         <section id="three">
           <div className="inner">
             <header className="major">
-              <h2>Tracks</h2>
+              <h2>Track</h2>
             </header>
             <ul>
-              <li>6” from the front edge measured from center of the track</li>
-              <li>Single track main line with passing sidings</li>
               <li>
-                Doulble track centerlines shall be spaced precisely 2 inches
-                apart
+                <b>T1. Track Spacing</b>
+                <ul>
+                  <li>
+                    T1.1 Mainline track should be 6” from the front edge
+                    measured from center of the track
+                  </li>
+                  <li>
+                    T1.2 Double track center lines shall be spaced precisely 2
+                    inches apart from track centers
+                  </li>
+                  <li>
+                    T1.3 2" of space should be left at the ends of a module for
+                    joiner tracks. You may choose to fill this space with empty
+                    ties and ballast for a cleaner look or simply paint the cork
+                    roadbed grey to allow the joiner track to fit easily.
+                  </li>
+                  <li>
+                    T1.4 Points on a turnout should not be less than 6" from the
+                    edge of a module.
+                  </li>
+                  <li>1.5 A turnout should not connect to a joiner track</li>
+                  <li>
+                    T1.6 Mainline tracks should end perpendicular to the
+                    endplate of a module
+                  </li>
+                </ul>
               </li>
-              <li>Code 83 track main, 70 possible on sidings</li>
-              <li>Micro-engineering or Peco brands</li>
-              <li>Cork roadbed</li>
               <li>
-                Motorized or manual turnouts - If manual, paint diverging throw
-                yellow
+                <b>T2. Track Arrangements</b>
+                <ul>
+                  <li>T2.1 Single or double track main lines are permitted</li>
+                  <li>
+                    T2.2 Single track mainlines are suggested to have passing
+                    sidings
+                  </li>
+                </ul>
               </li>
               <li>
-                Toggle switches are recessed or have bump protection on the
-                outside
+                <b>T3. Track Construction</b>
+                <ul>
+                  <li>T3.1 Code 83 must be used on mainline track</li>
+                  <li>
+                    T3.2 Code 100 can be used only in street running mainlines
+                  </li>
+                  <li>
+                    T3.3 Peco and Walthers brand switches are highly suggested
+                  </li>
+                  <li>T3.4 Cork roadbed must be used</li>
+                  <li>
+                    T3.5 Motorized or manual turnouts - If manual, paint
+                    diverging throw yellow
+                  </li>
+                  <li>
+                    T3.6 Toggle switches are recessed or have bump protection
+                    should be provided. When possible, try placing switches on
+                    the inside away from the front public facing side.
+                  </li>
+                  <li>
+                    T3.7 Each piece of track should have a feeder wire soldered
+                    to the power bus
+                  </li>
+                  <li>T3.8 Curved tracks must have staggered joints</li>
+                  <li>
+                    T3.9 31" is the minium radius allowed for mainline tracks
+                  </li>
+                  <li>
+                    T3.10 It is highly suggested to solder tracks connecting to
+                    joiners to screws for durability
+                  </li>
+                </ul>
               </li>
-              <li>
-                Each piece of track should have a feeder wire soldered to the
-                power bus
-              </li>
-              <li>Peco or Walthers turnouts - #6 on main, #5 on sidings</li>
-              <li>Joiner track is 2” from end - 4” long track</li>
-              <li>Use of Micro-engineering joiners suggested</li>
             </ul>
           </div>
         </section>
@@ -84,43 +157,81 @@ const Modules = () => {
               <h2>Electrical</h2>
             </header>
             <ul>
-              <li>Track bus - 14g wire</li>
               <li>
-                Track bus - white wire for rail nearest module front; black for
-                rail further from front
-              </li>
-              <li>Accessory bus - 14g wire @ 12v</li>
-              <li>
-                Accessory bus - red for positive wire and green for negative
-              </li>
-              <li>Wireless NCE</li>
-              <li>Plug panels to be determined at later date</li>
-              <li>Cork roadbed</li>
-              <li>
-                Motorized or manual turnouts - If manual, paint diverging throw
-                yellow
+                <b>E1. Track bus wire</b>
+                <ul>
+                  <li>E1.1 14g wire must be used</li>
+                  <li>
+                    E1.2 white wire is used for the rail nearest module front
+                  </li>
+                  <li>
+                    E1.3 black wire is used for the rail further from the module
+                    front
+                  </li>
+                </ul>
               </li>
               <li>
-                Toggle switches are recessed or have bump protection on the
-                outside
+                <b>E2. Accessory bus</b>
+                <ul>
+                  <li>E2.1 14g wire must be used</li>
+                  <li>
+                    E2.2 12v DC power must be provided, higher voltage is not
+                    permitted
+                  </li>
+                  <li>E2.3 Incandescent bulbs must not be used in buildings</li>
+                  <li>
+                    E2.4 Red colored wire is used for positive and green for
+                    negative
+                  </li>
+                </ul>
               </li>
               <li>
-                Each piece of track should have a feeder wire soldered to the
-                power bus
+                <b>E3. DCC</b>
+                <ul>
+                  <li>E3.1 Wireless NCE is our preferred DCC system</li>
+                  <li>
+                    E3.2 Plug panels will not be used in shows, we have no
+                    regulations regarding plug panel locations or quantity
+                  </li>
+                  <li> E3.3 WIFI throttles will be provided</li>
+                </ul>
               </li>
-              <li>Peco or Walthers turnouts - #6 on main, #5 on sidings</li>
-              <li>Joiner track is 2” from end - 4” long track</li>
-              <li>Use Micro-engineering joiners</li>
             </ul>
           </div>
         </section>
         <section id="five">
           <div className="inner">
             <header className="major">
-              <h2>Structure</h2>
+              <h2>Construction</h2>
             </header>
             <ul>
-              <li>40” height without levelers, with 40.5”</li>
+              <li>
+                <b>C1. Height</b>
+                <ul>
+                  <li>C1.1 40” height from floor</li>
+                  <li>
+                    C1.2 .5-1" of flexible height should be provided from leg
+                    levelers
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <ul>
+              <li>
+                <b>C2. Lumber</b>
+                <ul>
+                  <li>
+                    C2.1 Particle board is prohibited as a construction material
+                  </li>
+                  <li>
+                    C2.2 It highly suggested to use high-quality pine plywood
+                  </li>
+                  <li>
+                    C2.3 Tracks must have a solid wood base but the rest of a
+                    module can constructed as desired to accommodate scenery
+                  </li>
+                </ul>
+              </li>
             </ul>
           </div>
         </section>
@@ -130,15 +241,12 @@ const Modules = () => {
               <h2>Scenery</h2>
             </header>
             <ul>
-              <li>Ballast should be Woodland Scenics fine gray blend</li>
               <li>
-                The base layer of "soil" should be{' '}
-                <a href="https://www.homedepot.com/p/Custom-Building-Products-Prism-105-Earth-17-lb-Grout-PG10517T/202753902">
-                  Prism #105 Earth
-                </a>
+                S1.1 Ballast should be Woodland Scenics brand "fine gray blend"
               </li>
               <li>
-                Ground foam at the ends where it touches other modules should be{' '}
+                S1.2 Ground foam at the ends where a module touches other
+                modules is highly suggested to be{' '}
                 <a href="https://www.sceneryexpress.com/SCRUB-GRASS-BLEND-32-oz/productinfo/EX882B/">
                   Scenics Express Scrub Grass Blend
                 </a>
@@ -148,64 +256,19 @@ const Modules = () => {
                 Suggested mixes are listed below.
               </li>
               <li>
-                Facade paint will be{' '}
+                S1.3 Facade paint will be{' '}
                 <a href="https://www.sherwin-williams.com/en-us/color/color-family/orange-paint-colors/SW6104-kaffee">
                   Sherwin-Williams Kaffee
                 </a>
               </li>
-            </ul>
-            <p>
-              Track paint will use the Woodland Scencis paint pens detailed{' '}
-              <a href="https://woodlandscenics.woodlandscenics.com/show/category/TrackPainters">
-                here
-              </a>
-              .
-            </p>
-            <ul>
-              <li>Steel rail is used for main lines</li>
-              <li>Rusty rail is used for spurs</li>
-              <li>Weathered tie is used for all ties</li>
-            </ul>
-            <p>
-              Woodland Sceneics and Scenic Express offer a variety of mixes that
-              make excellet scenery. Here are a few suggestions.
-            </p>
-            <ul>
               <li>
-                Scenic Express Green Grass Blend, great for lawns and parks that
-                a slightly un-kept
-              </li>
-              <li>
-                Scenic Express Summer Lawn Blend, great for lawns and parks that
-                are highly maintained
-              </li>
-              <li>
-                Scenics Express Farm Pasture Blend, use in farm scenes and as an
-                alterantive to scrub grass
-              </li>
-              <li>
-                Woodland Scenics Green Grass, Burnt Grass, and Weeds are nice
-                mix-ins
+                S1.4 Suggested track paints are the Woodland Scenics paint pens
+                detailed{' '}
+                <a href="https://woodlandscenics.woodlandscenics.com/show/category/TrackPainters">
+                  here
+                </a>
               </li>
             </ul>
-            <p>
-              There are too many static grass options to list and frankly, you
-              can't go wrong. The key is to pick three or so colors and sizes
-              and use them randomly on a field.
-            </p>
-            <p>
-              Static grass tufts are great to use in addition to larger patches
-              of static grass. Etsy is a great place to buy these, often branded
-              for "Wargaming". Take a look at this{' '}
-              <a href="https://www.etsy.com/listing/780464328/self-adhesive-static-grass-tufts-for?ga_order=most_relevant&ga_search_type=all&ga_view_type=gallery&ga_search_query=static+grass+tufts&ref=sr_gallery-1-1&frs=1&cns=1&sts=1&organic_search_click=1">
-                example
-              </a>{' '}
-              or{' '}
-              <a href="https://www.etsy.com/listing/1158417351/grass-tufts-4-6-mm-meadow-grass?click_key=40909e3d36635f7430e0f4ae95076de458d6f106%3A1158417351&click_sum=db724c94&ref=internal_similar_listing_bot-1&sts=1&listing_id=1158417351&listing_slug=grass-tufts-4-6-mm-meadow-grass">
-                this one
-              </a>
-              .
-            </p>
           </div>
         </section>
       </div>
