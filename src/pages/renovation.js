@@ -21,11 +21,14 @@ const Renovation = () => {
         <section id="one">
           <div className="inner">
             <header className="major">
-              <h2>Closed Until 2024</h2>
+              <h2>Closed Until Summer 2024</h2>
             </header>
             <p>
               We are closed for renovations until 2024. We look forward to
-              seeing you then.
+              seeing you then. More updates will occur later this year.
+            </p>
+            <p>
+              <small>Last updated: Jan 21, 2024</small>
             </p>
           </div>
         </section>

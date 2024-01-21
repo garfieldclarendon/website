@@ -20,6 +20,11 @@ const Banner = (props) => (
           </li>
         </ul>
       </div>
+      <div className="content">
+        <h2>
+          <b>Re-Opening Summer 2024</b>
+        </h2>
+      </div>
     </div>
   </section>
 )
