@@ -25,9 +25,9 @@ const Modules = () => {
             <p>
               Listed on this page are the module standards we have agreed to as
               a club. They are loosely influenced by other standards like
-              Free-Mo. We like other standards but chose to create our own for
-              our unique uses and desires. Please do not consider our standards
-              as a slight towards any other standards.
+              Free-Mo. We choose to create our own standard to suit our needs.
+              Our guide allows for smaller setups, simplified wiring, and
+              interfacing with other popular standards.
             </p>
             <p>
               Some of the main differences you will find are within our corner
