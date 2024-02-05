@@ -56,7 +56,7 @@ const HolidayTrains = (props) => (
               <p>
                 If you are looking for a fun and unique experience, then you
                 should definitely check out the model railroad show at
-                Lincolnwood Town Center on April 29th. We have created a
+                Lincolnwood Town Center on April 20th 2024. We have created a
                 portable layout to enjoy while our home layout is closed for
                 construction. You will be able to speak with expert model
                 railroaders, ask questions, or just enjoy the sights. It is a
@@ -79,9 +79,9 @@ const HolidayTrains = (props) => (
                 membership information, we are excited to talk. You will be
                 amazed at the level of detail and craftsmanship on display, and
                 you will have a chance to meet like-minded people who share your
-                passion for trains. So mark your calendar for April 29th from
-                Noon to 5pm, and come see for yourself why model railroading is
-                such a fun and rewarding hobby.
+                passion for trains. So mark your calendar for April 20th from
+                10am to 4:30pm, and come see for yourself why model railroading
+                is such a fun and rewarding hobby.
               </p>
             </div>
             <div class="col-6">
@@ -126,8 +126,8 @@ const HolidayTrains = (props) => (
             <p>
               <em>
                 Lincolnwood Town Center and Friedman Real Estate Brokerage IL
-                LLC are not affilated with the Garfield-Clarendon Model Railroad
-                Club.
+                LLC are not affiliated with the Garfield-Clarendon Model
+                Railroad Club.
               </em>
             </p>
           </div>
