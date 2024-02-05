@@ -178,6 +178,11 @@
       max-height: none;
       min-height: 0;
 
+      .link.primary {
+        left: auto;
+        width: 80%;
+      }
+
       h3 {
         font-size: 1.5em;
       }

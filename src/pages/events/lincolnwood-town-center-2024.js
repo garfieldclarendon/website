@@ -4,14 +4,15 @@ import { Link } from 'gatsby'
 import Layout from '../../components/layout'
 import BannerLanding from '../../components/BannerLanding'
 
-import event1 from '../../assets/images/events/event1.jpeg'
-import event2 from '../../assets/images/events/event2.jpeg'
+import event1 from '../../assets/images/events/mall-layout2.jpeg'
+import event2 from '../../assets/images/events/mall-layout3.jpeg'
 
 const HolidayTrains = (props) => (
   <Layout>
     <Helmet>
       <title>
         Garfield-Clarendon Model Railroad Show at the Lincolnwood Town Center
+        2024
       </title>
       <meta
         name="description"
@@ -28,15 +29,18 @@ const HolidayTrains = (props) => (
 
     <div id="main" className="alt">
       <section id="one" className="spotlights">
-        <section>
-          <div className="image">
-            <img src={event1} alt="A minature scene of a sanding pit" />
-          </div>
-          <div className="content">
-            <div className="inner">
-              <header className="major">
+        <div className="inner">
+          <hr className="major" />
+          <div className="grid-wrapper">
+            <div class="col-6">
+              <span className="image fit">
+                <img src={event1} alt="A minature scene of a sanding pit" />
+              </span>
+            </div>
+            <div class="col-6">
+              <header>
                 <h3>Garfield-Clarendon Model Railroad Show</h3>
-                <h4>At the Lincolnwood Town Center - April 29th</h4>
+                <h4>At the Lincolnwood Town Center - April 20th 2024</h4>
               </header>
               <p>
                 Model railroading is a cherished pastime that all generations
@@ -60,14 +64,10 @@ const HolidayTrains = (props) => (
               </p>
             </div>
           </div>
-        </section>
-        <section>
-          <div className="image">
-            <img src={event2} alt="A Milwuakee Road Passger Train" />
-          </div>
-          <div className="content">
-            <div className="inner">
-              <header className="major">
+          <hr className="major" />
+          <div className="grid-wrapper">
+            <div className="col-6">
+              <header>
                 <h3>Why Attend?</h3>
               </header>
               <p>
@@ -84,8 +84,15 @@ const HolidayTrains = (props) => (
                 such a fun and rewarding hobby.
               </p>
             </div>
+            <div class="col-6">
+              <span className="image fit">
+                <div className="image">
+                  <img src={event2} alt="A Milwuakee Road Passger Train" />
+                </div>
+              </span>
+            </div>
           </div>
-        </section>
+        </div>
         <section>
           <div className="image">
             <iframe

@@ -11,7 +11,7 @@ const HolidayTrains = (props) => (
   <Layout>
     <Helmet>
       <title>
-        Garfield-Clarendon Model Railroad Show at Margate Park Aug 19-20th
+        Garfield-Clarendon Model Railroad Show at Margate Park Aug 19-20th 2023
       </title>
       <meta
         name="description"
@@ -36,7 +36,7 @@ const HolidayTrains = (props) => (
             <div className="inner">
               <header className="major">
                 <h3>Garfield-Clarendon Model Railroad Show</h3>
-                <h4>At Margate Park - August 19th-20th</h4>
+                <h4>At Margate Park - August 19th-20th 2023</h4>
                 <h5>Saturday August 19th Noon - 4pm</h5>
                 <h5>Sunday August 20th 11AM - 2:30pm</h5>
               </header>

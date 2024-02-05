@@ -85,7 +85,8 @@ const Modules = () => {
                   </li>
                   <li>
                     T1.2 Double track center lines shall be spaced precisely 2
-                    inches apart from track centers
+                    inches apart. The right-running track shall be 6" from the
+                    front edge as measured from the center of the track.
                   </li>
                   <li>
                     T1.3 2" of space should be left at the ends of a module for
