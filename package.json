@@ -13,11 +13,13 @@
     "gatsby-plugin-gdpr-cookies": "^2.0.9",
     "gatsby-plugin-google-gtag": "^3.5.0",
     "gatsby-plugin-image": "^1.5.0",
+    "gatsby-plugin-mailchimp": "^5.2.2",
     "gatsby-plugin-manifest": "^3.5.0",
     "gatsby-plugin-offline": "^4.5.0",
     "gatsby-plugin-page-creator": "^3.5.0",
     "gatsby-plugin-posthog": "^1.0.1",
     "gatsby-plugin-react-helmet": "^4.5.0",
+    "gatsby-plugin-recaptcha": "^1.0.5",
     "gatsby-plugin-sass": "^6.4.0",
     "gatsby-plugin-sharp": "^3.5.0",
     "gatsby-remark-images-contentful": "^4.2.0",
@@ -33,6 +35,7 @@
     "react-dialog": "^1.0.2",
     "react-helmet": "^6.1.0",
     "react-photo-gallery": "^8.0.0",
+    "react-recaptcha": "^2.3.10",
     "sass": "^1.57.1"
   },
   "keywords": [

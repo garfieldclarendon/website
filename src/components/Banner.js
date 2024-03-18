@@ -1,5 +1,6 @@
 import React from 'react'
 import mallEvent1 from '../assets/images/events/mall-layout.jpeg'
+import reopening from '../assets/images/reopening.jpeg'
 
 const Banner = (props) => (
   <>
@@ -53,6 +54,38 @@ const Banner = (props) => (
         </div>
       </div>
     </section>
+    {/* <section>
+      <div class="inner">
+        <div class="grid-wrapper">
+          <div class="col-6">
+            <span class="image fit">
+              <img
+                src={reopening}
+                alt="A Burnlington Northern Train enters Georgetown"
+              />
+            </span>
+          </div>
+          <div class="col-6">
+            <header class="alt">
+              <h3>Re-Opening June 2024</h3>
+              <p>
+                We will be re-opening June 2024. Join our email newsletter get
+                updates!
+              </p>
+              <p>
+                <a
+                  href="/newsletter"
+                  className="button special"
+                  name="Join our Email Newsletter"
+                >
+                  Join our Email Newsletter
+                </a>
+              </p>
+            </header>
+          </div>
+        </div>
+      </div>
+    </section> */}
   </>
 )
 
