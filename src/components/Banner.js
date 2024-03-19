@@ -54,7 +54,7 @@ const Banner = (props) => (
         </div>
       </div>
     </section>
-    {/* <section>
+    <section>
       <div class="inner">
         <div class="grid-wrapper">
           <div class="col-6">
@@ -85,7 +85,7 @@ const Banner = (props) => (
           </div>
         </div>
       </div>
-    </section> */}
+    </section>
   </>
 )
 

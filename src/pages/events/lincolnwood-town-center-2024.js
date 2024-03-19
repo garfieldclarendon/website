@@ -40,7 +40,9 @@ const HolidayTrains = (props) => (
             <div class="col-6">
               <header>
                 <h3>Garfield-Clarendon Model Railroad Show</h3>
-                <h4>At the Lincolnwood Town Center - April 20th 2024</h4>
+                <h4>
+                  At the Lincolnwood Town Center - April 20th 2024 - Noon - 5PM
+                </h4>
               </header>
               <p>
                 Model railroading is a cherished pastime that all generations
