@@ -14,8 +14,13 @@ const Newsletter = () => {
     let emailNewsletterForm = document.getElementById('emailNewsletter')
     let formData = new FormData(emailNewsletterForm)
     const email = formData.get('email')
-    const result = await addToMailchimp(email)
-    console.log(result.result)
+    const fname = formData.get('firstName')
+    const lname = formData.get('lastName')
+    const result = await addToMailchimp(email, {
+      FNAME: fname,
+      LNAME: lname,
+    })
+
     if (result.result === 'success') {
       setIsSuccessful(true)
       setIsError(false)
@@ -51,7 +56,7 @@ const Newsletter = () => {
               <h2>Garfield-Clarendon Email Newsletter</h2>
             </header>
             <p>
-              Stay up-to-date on what is going on with our club. Join our
+              Stay up-to-date on what is going on within our club. Join our
               newsletter. We send out updates for upcoming shows, open houses,
               and other news.
             </p>
@@ -68,10 +73,19 @@ const Newsletter = () => {
                   <div className="mb-5">
                     <input
                       type="text"
-                      name="name"
-                      id="name"
+                      name="firstName"
+                      id="firstName"
                       defaultValue=""
-                      placeholder="Name"
+                      placeholder="First Name"
+                    />
+                  </div>
+                  <div className="mb-5">
+                    <input
+                      type="text"
+                      name="lastName"
+                      id="lastName"
+                      defaultValue=""
+                      placeholder="Last Name"
                     />
                   </div>
                 </div>
