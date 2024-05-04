@@ -29,48 +29,19 @@ const Banner = (props) => (
       <div class="inner">
         <div class="grid-wrapper">
           <div class="col-6">
-            <header class="alt">
-              <h3>Lincolnwood Town Center Spring Show</h3>
-              <p>Join us April 20, 2024 for our Spring modular layout show!</p>
-              <p>
-                <a
-                  href="/events/lincolnwood-town-center-2024"
-                  className="button special"
-                  name="Spring Show Details"
-                >
-                  View More Information
-                </a>
-              </p>
-            </header>
-          </div>
-          <div class="col-6">
-            <span class="image fit">
-              <img
-                src={mallEvent1}
-                alt="Happy visitors look at the Mall Layout"
-              />
-            </span>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section>
-      <div class="inner">
-        <div class="grid-wrapper">
-          <div class="col-6">
             <span class="image fit">
               <img
                 src={reopening}
-                alt="A Burnlington Northern Train enters Georgetown"
+                alt="A Burlington Northern Train enters Georgetown"
               />
             </span>
           </div>
           <div class="col-6">
             <header class="alt">
-              <h3>Re-Opening June 2024</h3>
+              <h3>Re-Opening Late Summer / Early Fall 2024</h3>
               <p>
-                We will be re-opening June 2024. Join our email newsletter get
-                updates!
+                We will be re-opening late summer / early fall 2024. Join our
+                email newsletter get updates!
               </p>
               <p>
                 <a
@@ -79,6 +50,15 @@ const Banner = (props) => (
                   name="Join our Email Newsletter"
                 >
                   Join our Email Newsletter
+                </a>
+              </p>
+              <p>
+                <a
+                  href="/membership"
+                  className="button outline"
+                  name="Learn About Membership"
+                >
+                  Learn About Membership
                 </a>
               </p>
             </header>

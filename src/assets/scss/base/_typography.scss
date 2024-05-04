@@ -112,6 +112,16 @@ h6 {
   font-size: 0.7em;
 }
 
+hgroup {
+  & h2,
+  & h3 {
+    margin-bottom: 0;
+  }
+  & :last-child {
+    margin-bottom: (_size(element-margin) * 0.5);
+  }
+}
+
 @include breakpoint(small) {
   h1 {
     font-size: 2em;
