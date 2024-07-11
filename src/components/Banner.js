@@ -11,17 +11,6 @@ const Banner = (props) => (
         </header>
         <div className="content">
           <p>A model railroad located in Uptown, Chicago</p>
-          <ul className="actions">
-            <li>
-              <a
-                href="/events/lincolnwood-town-center-2024"
-                name="Spring Show Details"
-                className="button next scrolly"
-              >
-                Spring Show Details
-              </a>
-            </li>
-          </ul>
         </div>
       </div>
     </section>
@@ -38,10 +27,10 @@ const Banner = (props) => (
           </div>
           <div class="col-6">
             <header class="alt">
-              <h3>Re-Opening Late Summer / Early Fall 2024</h3>
+              <h3>Re-Opening Late 2024</h3>
               <p>
-                We will be re-opening late summer / early fall 2024. Join our
-                email newsletter get updates!
+                We will be re-opening late 2024. Join our email newsletter get
+                updates!
               </p>
               <p>
                 <a
