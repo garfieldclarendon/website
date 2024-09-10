@@ -70,9 +70,11 @@ const Landing = () => {
         <section id="one">
           <div className="inner">
             <header className="major">
-              <h2>Closed Until 2024</h2>
+              <h2>Closed Until 2025</h2>
             </header>
-            <p>The building we are in is under renovation. See you in 2024.</p>
+            <p>
+              The building we are in is under renovation. See you in mid-2025.
+            </p>
             <ul className="actions">
               <li>
                 <Link to="/renovation" className="button">

@@ -27,9 +27,9 @@ const Banner = (props) => (
           </div>
           <div class="col-6">
             <header class="alt">
-              <h3>Re-Opening Late 2024</h3>
+              <h3>Re-Opening Mid-2025</h3>
               <p>
-                We will be re-opening late 2024. Join our email newsletter get
+                We will be re-opening mid-2025. Join our email newsletter get
                 updates!
               </p>
               <p>
