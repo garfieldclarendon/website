@@ -65,7 +65,7 @@ const HolidayTrains = (props) => (
                 The Garfield-Clarendon Model Railroad Club has been inspiring
                 and teaching others about model railroading for over 75 years.
                 We are excited to welcome guests back to our permanent home at
-                Clarendon Park when it re-opens in 2024. In the meantime, we
+                Clarendon Park when it re-opens in 2025. In the meantime, we
                 will have plenty of information about our club and membership if
                 you're interested in learning more about getting into the hobby.
               </p>

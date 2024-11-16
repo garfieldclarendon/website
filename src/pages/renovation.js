@@ -28,7 +28,7 @@ const Renovation = () => {
               seeing you then. More updates will occur later this year.
             </p>
             <p>
-              <small>Last updated: Sep 10, 2024</small>
+              <small>Last updated: November 16, 2024</small>
             </p>
           </div>
         </section>
