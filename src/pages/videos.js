@@ -38,7 +38,7 @@ const Videos = () => {
                 <iframe
                   width="560"
                   height="315"
-                  src="https://www.youtube.com/embed/2WrK-954FrU"
+                  src="https://www.youtube.com/embed/juCC_Yj78Zg"
                   frameborder="0"
                   allowFullScreen="allowFullScreen"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -48,9 +48,29 @@ const Videos = () => {
                 <iframe
                   width="560"
                   height="315"
-                  src="https://www.youtube.com/embed/MxiI41WUPZ4"
+                  src="https://www.youtube.com/embed/aHgw_L0ohHA"
                   frameborder="0"
                   allowFullScreen="allowFullScreen"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen"
+                ></iframe>
+              </div>
+            </div>
+            <div className="grid-wrapper">
+              <div className="col-6">
+                <iframe
+                  width="560"
+                  height="315"
+                  src="https://www.youtube.com/embed/liSO6aMFNFU?si=a-3kmABUj_gl44pc&amp;start=1213"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen"
+                ></iframe>
+              </div>
+              <div className="col-6">
+                <iframe
+                  width="560"
+                  height="315"
+                  src="https://www.youtube.com/embed/MxiI41WUPZ4"
+                  frameborder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen"
                 ></iframe>
               </div>
@@ -69,7 +89,7 @@ const Videos = () => {
                 <iframe
                   width="560"
                   height="315"
-                  src="https://www.youtube.com/embed/MxiI41WUPZ4"
+                  src="https://www.youtube.com/embed/ugXCj5wasuo"
                   frameborder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen"
                 ></iframe>
