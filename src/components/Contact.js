@@ -4,7 +4,7 @@ const Contact = (props) => {
   const [isSuccessful, setIsSuccessful] = useState(false)
   const [isError, setIsError] = useState(false)
   const [isDisabled, setIsDisabled] = useState(false)
-  const [formData, setFormData] = useState({})
+  const [formData, setFormData] = useState({ message: '', email: '', name: '' })
   const [errors, setErrors] = useState({})
 
   const handleChange = (e) => {
@@ -15,8 +15,8 @@ const Contact = (props) => {
     e.preventDefault()
     setIsDisabled(true)
     const validationErrors = validateContactForm(formData)
-    console.log(Object.keys(validationErrors).length)
     if (Object.keys(validationErrors).length === 0) {
+      setErrors({}) // Clear errors when valid
       let myForm = document.getElementById('contactForm')
       let formData = new FormData(myForm)
       fetch('/', {
@@ -29,12 +29,11 @@ const Contact = (props) => {
             setIsSuccessful(true)
             setFormData({ name: '', email: '', message: '' }) // Reset form
           } else {
-            console.log('error')
             setIsError(true)
+            setIsDisabled(false)
           }
         })
         .catch((error) => () => {
-          console.log('Error')
           setIsSuccessful(false)
           setIsDisabled(false)
         })
@@ -52,8 +51,6 @@ const Contact = (props) => {
       errors.name = 'Name is required.'
     } else if (formData.name.trim().length < 2) {
       errors.name = 'Name must be at least 2 characters.'
-    } else {
-      delete errors.name
     }
 
     // Validate Email (basic regex check)
@@ -62,8 +59,6 @@ const Contact = (props) => {
       errors.email = 'Email is required.'
     } else if (!emailRegex.test(formData.email.trim())) {
       errors.email = 'Invalid email format.'
-    } else {
-      delete errors.email
     }
 
     // Validate Message (at least 10 characters)
@@ -71,8 +66,6 @@ const Contact = (props) => {
       errors.message = 'Message is required.'
     } else if (formData.message.trim().length < 10) {
       errors.message = 'Message must be at least 10 characters.'
-    } else {
-      delete errors.message
     }
 
     return errors
@@ -114,9 +107,10 @@ const Contact = (props) => {
                     name="name"
                     id="name"
                     required
+                    value={formData.name}
                     onChange={handleChange}
                   />
-                  {errors.email && (
+                  {errors.name && (
                     <span className="form-error">{errors.name}</span>
                   )}
                 </div>
@@ -127,12 +121,11 @@ const Contact = (props) => {
                     name="email"
                     id="email"
                     required
+                    value={formData.email}
                     onChange={handleChange}
                   />
                   {errors.email && (
-                    <span className="form-error">
-                      Please enter a valid email
-                    </span>
+                    <span className="form-error">{errors.email}</span>
                   )}
                 </div>
                 <div className="field">
@@ -142,6 +135,8 @@ const Contact = (props) => {
                     id="message"
                     rows="6"
                     required
+                    value={formData.message}
+                    onInput={handleChange}
                     onChange={handleChange}
                   ></textarea>
                   {errors.message && (
