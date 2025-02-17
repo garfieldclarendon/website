@@ -38,7 +38,8 @@ const Membership = (props) => (
           <div className="grid-wrapper">
             <div className="col-6">
               <h3>
-                Benefits <i class="inlineIcon fa fa-plus" aria-hidden="true" />
+                Benefits{' '}
+                <i className="inlineIcon fa fa-plus" aria-hidden="true" />
               </h3>
               <ul>
                 <li>Gain experience to build your own home layout</li>
@@ -51,7 +52,10 @@ const Membership = (props) => (
             <div className="col-6">
               <h3>
                 Who Should Join{' '}
-                <i class="inlineIcon fa fa-check-square" aria-hidden="true" />
+                <i
+                  classNamee="inlineIcon fa fa-check-square"
+                  aria-hidden="true"
+                />
               </h3>
               <p>
                 Anyone interested in railroads, model railroading, and
@@ -61,7 +65,7 @@ const Membership = (props) => (
             <div className="col-4">
               <h3>
                 Membership Levels{' '}
-                <i class="inlineIcon fa fa-signal" aria-hidden="true" />
+                <i className="inlineIcon fa fa-signal" aria-hidden="true" />
               </h3>
               <p>
                 We have several membership levels tailored to fit
@@ -80,7 +84,7 @@ const Membership = (props) => (
             <div className="col-4">
               <h3>
                 Running Trains{' '}
-                <i class="inlineIcon fa fa-train" aria-hidden="true" />
+                <i className="inlineIcon fa fa-train" aria-hidden="true" />
               </h3>
               <p>
                 Membership is required to run trains without supervision. On
@@ -95,7 +99,7 @@ const Membership = (props) => (
             <div className="col-4">
               <h3>
                 Requirements{' '}
-                <i class="inlineIcon fa fa-tasks" aria-hidden="true" />
+                <i className="inlineIcon fa fa-tasks" aria-hidden="true" />
               </h3>
               <p>
                 Membership is open to anyone. Whether you're new to the hobby or
@@ -113,7 +117,7 @@ const Membership = (props) => (
             <div className="col-6">
               <h3>
                 Equipment Standards{' '}
-                <i class="inlineIcon fa fa-thumbs-up" aria-hidden="true" />
+                <i className="inlineIcon fa fa-thumbs-up" aria-hidden="true" />
               </h3>
               <p>
                 Prospective members must be accompanied by a club member when
@@ -134,7 +138,8 @@ const Membership = (props) => (
             </div>
             <div className="col-6">
               <h3>
-                Process <i class="inlineIcon fa fa-cogs" aria-hidden="true" />
+                Process{' '}
+                <i className="inlineIcon fa fa-cogs" aria-hidden="true" />
               </h3>
               <p>
                 We suggest taking your time to explore our club on work days and
@@ -158,7 +163,10 @@ const Membership = (props) => (
             <div className="col-6">
               <h3>
                 Additonal Information{' '}
-                <i class="inlineIcon fa fa-puzzle-piece" aria-hidden="true" />
+                <i
+                  className="inlineIcon fa fa-puzzle-piece"
+                  aria-hidden="true"
+                />
               </h3>
               <ul>
                 <li>

@@ -92,12 +92,23 @@ textarea {
 
   &:invalid {
     box-shadow: none;
+    border: 2px dashed #d43939;
   }
 
   &:focus {
     border-color: _palette(highlight);
     box-shadow: 0 0 0 2px _palette(highlight);
   }
+}
+
+.form-error {
+  color: #d43939;
+  font-weight: bold;
+}
+
+.form-success {
+  color: #2d9252;
+  font-weight: bold;
 }
 
 .select-wrapper {

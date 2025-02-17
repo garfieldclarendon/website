@@ -15,18 +15,18 @@ const Banner = (props) => (
       </div>
     </section>
     <section>
-      <div class="inner">
-        <div class="grid-wrapper">
-          <div class="col-6">
-            <span class="image fit">
+      <div className="inner">
+        <div className="grid-wrapper">
+          <div className="col-6">
+            <span className="image fit">
               <img
                 src={reopening}
                 alt="A Burlington Northern Train enters Georgetown"
               />
             </span>
           </div>
-          <div class="col-6">
-            <header class="alt">
+          <div className="col-6">
+            <header className="alt">
               <h3>Re-Opening Mid-2025</h3>
               <p>
                 We will be re-opening mid-2025. Join our email newsletter get

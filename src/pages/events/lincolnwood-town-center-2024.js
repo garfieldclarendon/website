@@ -32,12 +32,12 @@ const HolidayTrains = (props) => (
         <div className="inner">
           <hr className="major" />
           <div className="grid-wrapper">
-            <div class="col-6">
+            <div className="col-6">
               <span className="image fit">
                 <img src={event1} alt="A minature scene of a sanding pit" />
               </span>
             </div>
-            <div class="col-6">
+            <div className="col-6">
               <header>
                 <h3>Garfield-Clarendon Model Railroad Show</h3>
                 <h4>
@@ -86,7 +86,7 @@ const HolidayTrains = (props) => (
                 is such a fun and rewarding hobby.
               </p>
             </div>
-            <div class="col-6">
+            <div className="col-6">
               <span className="image fit">
                 <div className="image">
                   <img src={event2} alt="A Milwuakee Road Passger Train" />
