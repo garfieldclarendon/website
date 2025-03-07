@@ -4,7 +4,7 @@ import Layout from '../components/layout'
 import BannerLanding from '../components/BannerLanding'
 
 import straightModule from '../assets/images/modules/straightModule.png'
-import cornerModule from '../assets/images/modules/corner-module.png'
+import cornerModule from '../assets/images/modules/corner-module-2.png'
 
 const Modules = () => {
   return (
