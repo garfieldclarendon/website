@@ -57,6 +57,10 @@
     @include vendor('background-image', 'url("../images/youth_outreach1.jpg")');
   }
 
+  &.donate {
+    @include vendor('background-image', 'url("../images/donate.jpg")');
+  }
+
   &.learnAboutModelRailroading {
     @include vendor(
       'background-image',
