@@ -51,7 +51,7 @@ class HomeIndex extends React.Component {
               >
                 <header className="major">
                   <h3>Education</h3>
-                  <p>Learn about the model railroading</p>
+                  <p>Learn about model railroading</p>
                 </header>
               </Link>
             </article>
@@ -98,7 +98,10 @@ class HomeIndex extends React.Component {
                 <h2>Model Railroading in the City</h2>
               </header>
               <p>
-                Little space and big dreams? No problem! In our new series of blog posts we explore how to create a small layout perfect for city dewellers. Our solutions won't comprimise on enjoyment but will fit any apartment.
+                Little space and big dreams? No problem! In our new series of
+                blog posts we explore how to create a small layout perfect for
+                city dewellers. Our solutions won't comprimise on enjoyment but
+                will fit any apartment.
               </p>
               <ul className="actions">
                 <li>
