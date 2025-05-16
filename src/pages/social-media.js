@@ -37,7 +37,7 @@ const Landing = (props) => (
               </header>
               <ul>
                 <li>
-                  <a href="https://www.facebook.com/garfieldcentral">
+                  <a href="https://www.facebook.com/GCModelRailroad">
                     Facebook
                   </a>
                 </li>
