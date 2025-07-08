@@ -21,14 +21,14 @@ const Renovation = () => {
         <section id="one">
           <div className="inner">
             <header className="major">
-              <h2>Closed Until 2025</h2>
+              <h2>Reopened</h2>
             </header>
             <p>
-              We are closed for renovations until 2025. We look forward to
-              seeing you then. More updates will occur later this year.
+              We re-opened the Garfield-Clarendon Model Railroad Club on July 7,
+              2025.
             </p>
             <p>
-              <small>Last updated: November 16, 2024</small>
+              <small>Last updated: July 7, 2025</small>
             </p>
           </div>
         </section>
