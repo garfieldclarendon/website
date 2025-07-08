@@ -62,7 +62,7 @@ const Landing = () => {
       <BannerLanding
         bannerColor="grey"
         style="visitors"
-        title="Currently Closed for Renovation"
+        title="Visit Us"
         description="Located in the Clarendon Park Community Center in Uptown, Chicago"
       />
 
@@ -70,18 +70,12 @@ const Landing = () => {
         <section id="one">
           <div className="inner">
             <header className="major">
-              <h2>Closed Until 2025</h2>
+              <h2>Now Open</h2>
             </header>
             <p>
-              The building we are in is under renovation. See you in mid-2025.
+              We are open Fridays 5:00 PM - 7PM. We expect this to become longer
+              in the Fall.
             </p>
-            <ul className="actions">
-              <li>
-                <Link to="/renovation" className="button">
-                  Preview the Renovations
-                </Link>
-              </li>
-            </ul>
           </div>
         </section>
         {/* <section id="one">
@@ -100,67 +94,66 @@ const Landing = () => {
           </div>
         </section> */}
         <section id="two" className="spotlights">
-          {/* <section>
-            <div className="image">
-              <img src={williamsport} alt="Williamsport" />
-            </div>
-            <div className="content">
-              <div className="inner">
-                <header className="major">
-                  <h3>Other Days</h3>
-                </header>
-                <p>
-                  We often get asked if we are open other days than Friday. As a
-                  non-profit volunteer lead group, we have limited availability.
-                  As such, we only guarantee being available on Fridays from
-                  5:30pm - 7:00pm.
-                </p>
-                <p>
-                  Unfortunately we are unable to offer special openings for
-                  monetary donations. Most members are unable to oblige such
-                  requests due to everyday obligations.
-                </p>
+          {
+            <section>
+              <div className="image">
+                <img src={williamsport} alt="Williamsport" />
               </div>
-            </div>
-          </section> */}
-          {/* <section>
-            <div className="image">
-              <iframe
-                title="Google Map of Garfield-Clarendon Location"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2966.705025808824!2d-87.65147078457677!3d41.963670468033904!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fd3cf9455abf1%3A0xa3083269e6ce880!2sGarfield-Clarendon%20Model%20Railroad%20Club!5e0!3m2!1sen!2sus!4v1615137454411!5m2!1sen!2sus"
-                width="500"
-                height="450"
-                allowfullscreen=""
-                loading="lazy"
-              ></iframe>
-            </div>
-            <div className="content">
-              <div className="inner">
-                <header className="major">
-                  <h3>Getting Here</h3>
-                </header>
-                <p>
-                  We're located in the Clarendon Park Community Center in the
-                  Uptown neighborhood of Chicago. 4501 N. Clarendon Ave.
-                  Chicago, IL 60640
-                </p>
-                <p>We are easily accessible using the CTA.</p>
-                <ul className="actions">
-                  <li className="textItem">
-                    By train: Walk east from the Wilson Station
-                  </li>
-                  <li className="textItem">
-                    By bus: Use the 78 Montrose of 146 Inner Drive Express
-                  </li>
-                </ul>
-                <p>
-                  Plenty of parking is available in the lot adjacent to the
-                  building. Street parking is also available on Marine Dr. and
-                  Clarendon Ave.
-                </p>
+              <div className="content">
+                <div className="inner">
+                  <header className="major">
+                    <h3>Opening Hours</h3>
+                  </header>
+                  <p>
+                    We often get asked if we are open other days than Friday. As
+                    a non-profit volunteer lead group, we have limited
+                    availability. As such, we only guarantee being available on
+                    Fridays from 5:00pm - 7:00pm.
+                  </p>
+                </div>
               </div>
-            </div>
-          </section> */}
+            </section>
+          }
+          {
+            <section>
+              <div className="image">
+                <iframe
+                  title="Google Map of Garfield-Clarendon Location"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2966.705025808824!2d-87.65147078457677!3d41.963670468033904!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fd3cf9455abf1%3A0xa3083269e6ce880!2sGarfield-Clarendon%20Model%20Railroad%20Club!5e0!3m2!1sen!2sus!4v1615137454411!5m2!1sen!2sus"
+                  width="500"
+                  height="450"
+                  allowfullscreen=""
+                  loading="lazy"
+                ></iframe>
+              </div>
+              <div className="content">
+                <div className="inner">
+                  <header className="major">
+                    <h3>Getting Here</h3>
+                  </header>
+                  <p>
+                    We're located in the Clarendon Park Community Center in the
+                    Uptown neighborhood of Chicago. 4501 N. Clarendon Ave.
+                    Chicago, IL 60640
+                  </p>
+                  <p>We are easily accessible using the CTA.</p>
+                  <ul className="actions">
+                    <li className="textItem">
+                      By train: Walk east from the Wilson Station
+                    </li>
+                    <li className="textItem">
+                      By bus: Use the 78 Montrose of 146 Inner Drive Express
+                    </li>
+                  </ul>
+                  <p>
+                    Plenty of parking is available in the lot adjacent to the
+                    building. Street parking is also available on Marine Dr. and
+                    Clarendon Ave.
+                  </p>
+                </div>
+              </div>
+            </section>
+          }
         </section>
       </div>
     </Layout>

@@ -6,15 +6,6 @@ const Footer = (props) => (
       <ul className="icons">
         <li>
           <a
-            href="https://twitter.com/GCModelRailroad"
-            aria-label="Twitter"
-            className="icon alt fa-twitter"
-          >
-            <span className="label">Twitter</span>
-          </a>
-        </li>
-        <li>
-          <a
             href="https://www.facebook.com/GCModelRailroad"
             aria-label="Facebook"
             className="icon alt fa-facebook"

@@ -1,5 +1,4 @@
 import React from 'react'
-import mallEvent1 from '../assets/images/events/mall-layout.jpeg'
 import reopening from '../assets/images/reopening.jpeg'
 
 const Banner = (props) => (
@@ -27,10 +26,10 @@ const Banner = (props) => (
           </div>
           <div className="col-6">
             <header className="alt">
-              <h3>Re-Opening Mid-2025</h3>
+              <h3>Now Open Limited Hours</h3>
               <p>
-                We will be re-opening mid-2025. Join our email newsletter get
-                updates!
+                We are now open Fridays 5PM - 7PM. We will be open later on
+                Fridays in the Fall.
               </p>
               <p>
                 <a
