@@ -28,8 +28,9 @@ const Banner = (props) => (
             <header className="alt">
               <h3>Now Open Limited Hours</h3>
               <p>
-                We are now open Fridays 5PM - 7PM. We will be open later on
-                Fridays in the Fall.
+                We are now have soft opening hours Fridays 5PM - 7PM. We will be
+                open later on Fridays in the Fall. Join to newsletter to be the
+                first to learn about our grand reopening.
               </p>
               <p>
                 <a

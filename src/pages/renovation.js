@@ -39,7 +39,7 @@ const Renovation = () => {
             </header>
             <p>
               We are excited for the Chicago Park District's commitment to
-              bringing upgrades and ammenties to the Uptown community. The
+              bringing upgrades and amenities to the Uptown community. The
               renovations of the Clarendon Park Community Center will bring the
               building up to modern accessibility standards and repair vital
               infrastructure.
