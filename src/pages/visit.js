@@ -70,11 +70,12 @@ const Landing = () => {
         <section id="one">
           <div className="inner">
             <header className="major">
-              <h2>Now Open</h2>
+              <h2>Open by Appointment Only</h2>
             </header>
             <p>
-              We are open Fridays 5:00 PM - 7PM. We expect this to become longer
-              in the Fall.
+              We are now open by appointment only with full hours expected in
+              Fall. Join our newsletter to be the first to learn about our grand
+              reopening.
             </p>
           </div>
         </section>

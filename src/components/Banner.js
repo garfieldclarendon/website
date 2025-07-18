@@ -26,11 +26,11 @@ const Banner = (props) => (
           </div>
           <div className="col-6">
             <header className="alt">
-              <h3>Now Open Limited Hours</h3>
+              <h3>Open by Appointment Only</h3>
               <p>
-                We are now have soft opening hours Fridays 5PM - 7PM. We will be
-                open later on Fridays in the Fall. Join to newsletter to be the
-                first to learn about our grand reopening.
+                We are now open by appointment only with full hours expected in
+                Fall. Join our newsletter to be the first to learn about our
+                grand reopening.
               </p>
               <p>
                 <a
