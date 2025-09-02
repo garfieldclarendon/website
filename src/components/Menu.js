@@ -37,7 +37,7 @@ const Menu = (props) => (
           </Link>
         </li>
         <li>
-          <Link onClick={props.onToggleMenu} to="/videos">
+          <Link onClick={props.onToggleMenu} to="/media">
             Videos
           </Link>
         </li>

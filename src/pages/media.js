@@ -6,6 +6,12 @@ import Gallery from 'react-photo-gallery'
 import Dialog from 'react-dialog'
 import BannerVideo from '../components/BannerVideo'
 import acela from '../assets/videos/acela.mp4'
+import up1995 from '../assets/images/youtube/up1995.png'
+import openHouse from '../assets/images/youtube/garfield-clarendon-open-house.png'
+import largeLayout from '../assets/images/youtube/largeholayout.png'
+import biggestSet from '../assets/images/youtube/biggest-set.png'
+import cnw from '../assets/images/youtube/cnw-f-units.png'
+import gcClub from '../assets/images/youtube/garfield-clarendon-model-railroad-club.png'
 
 export const query = graphql`
   query Photos {
@@ -67,14 +73,109 @@ const Landing = ({ data }) => {
       />
 
       <div id="main">
+        <section>
+          <div className="inner">
+            <header>
+              <h2>Renovation Note</h2>
+            </header>
+            <p>
+              These videos showcase the layout before building renovations, when
+              its future was uncertain. We are pleased to share that our
+              building has since been fully restored, and the layout's future is
+              now secure.
+            </p>
+          </div>
+        </section>
         <section id="one">
           <div className="inner">
             <header className="major">
-              <h2>190 North “Hidden Train Treasure”</h2>
+              <h2>Prior to 2023</h2>
             </header>
             <div className="grid-wrapper">
+              <div className="col-6">
+                <a
+                  className="youtubeThumb"
+                  href="https://www.youtube.com/watch?v=2WrK-954FrU"
+                >
+                  <img
+                    src={largeLayout}
+                    height="315"
+                    width="560"
+                    alt="Large Model Railroad HO Scale"
+                  />
+                </a>
+              </div>
+              <div className="col-6">
+                <a
+                  className="youtubeThumb"
+                  href="https://www.youtube.com/watch?v=MxiI41WUPZ4"
+                >
+                  <img
+                    src={biggestSet}
+                    height="315"
+                    width="560"
+                    alt="Biggest Model Train Set in Chicago"
+                  />
+                </a>
+              </div>
+            </div>
+            <div className="grid-wrapper">
+              <div className="col-6">
+                <a
+                  className="youtubeThumb"
+                  href="https://www.youtube.com/watch?v=aHgw_L0ohHA"
+                >
+                  <img
+                    src={gcClub}
+                    height="315"
+                    width="560"
+                    alt="The Garfield-Clarendon Model Railroad Club"
+                  />
+                </a>
+              </div>
+              <div className="col-6">
+                <a
+                  className="youtubeThumb"
+                  href="https://www.youtube.com/watch?v=ljH0oeCTZoI"
+                >
+                  <img
+                    src={openHouse}
+                    height="315"
+                    width="560"
+                    alt="The Garfield-Clarendon Model Railroad Club"
+                  />
+                </a>
+              </div>
+            </div>
+            <div className="grid-wrapper">
+              <div className="col-6">
+                <a
+                  className="youtubeThumb"
+                  href="https://www.youtube.com/watch?v=z7ET-szCfEo"
+                >
+                  <img src={cnw} height="315" width="560" alt="CNW F Units" />
+                </a>
+              </div>
+              <div className="col-6">
+                <a
+                  className="youtubeThumb"
+                  href="https://www.youtube.com/watch?v=auXqukgQqGM"
+                >
+                  <img
+                    src={up1995}
+                    height="315"
+                    width="560"
+                    alt="UP 1995 and 1989 Train"
+                  />
+                </a>
+              </div>
+            </div>
+            <header className="major">
+              <h2>190 North “Hidden Train Treasure”</h2>
+            </header>
+            <div className="grid-wrapper youtubeThumb">
               <p className="col-6">
-                <video controls>
+                <video>
                   <source
                     src="https://vcl.abcotv.net/video/wls/082018-wls-190north-lets-play-trains-vid.mp4"
                     type="video/mp4"
@@ -82,118 +183,6 @@ const Landing = ({ data }) => {
                   Sorry your browser doesn't support embeded videos.
                 </video>
               </p>
-            </div>
-            <header className="major">
-              <h2>YouTube</h2>
-            </header>
-            <div className="grid-wrapper">
-              <div className="col-6">
-                <iframe
-                  id="youtube-video-1"
-                  width="560"
-                  height="315"
-                  src="https://www.youtube.com/embed/2WrK-954FrU"
-                  frameborder="0"
-                  allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen"
-                  allowfullscreen
-                ></iframe>
-              </div>
-              <div className="col-6">
-                <iframe
-                  id="youtube-video-2"
-                  width="560"
-                  height="315"
-                  src="https://www.youtube.com/embed/MxiI41WUPZ4"
-                  frameborder="0"
-                  allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen"
-                  allowfullscreen
-                ></iframe>
-              </div>
-            </div>
-            <div className="grid-wrapper">
-              <div className="col-6">
-                <iframe
-                  id="youtube-video-3"
-                  width="560"
-                  height="315"
-                  src="https://www.youtube.com/embed/aHgw_L0ohHA"
-                  frameborder="0"
-                  allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen"
-                  allowfullscreen
-                ></iframe>
-              </div>
-              <div className="col-6">
-                <iframe
-                  id="youtube-video-4"
-                  width="560"
-                  height="315"
-                  src="https://www.youtube.com/embed/ljH0oeCTZoI"
-                  frameborder="0"
-                  allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen"
-                  allowfullscreen
-                ></iframe>
-              </div>
-            </div>
-            <div className="grid-wrapper">
-              <div className="col-6">
-                <iframe
-                  id="youtube-video-5"
-                  width="560"
-                  height="315"
-                  src="https://www.youtube.com/embed/ohKm2DgpIjc"
-                  frameborder="0"
-                  allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen"
-                  allowfullscreen
-                ></iframe>
-              </div>
-              <div className="col-6">
-                <iframe
-                  id="youtube-video-6"
-                  width="560"
-                  height="315"
-                  src="https://www.youtube.com/embed/ugXCj5wasuo"
-                  frameborder="0"
-                  allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen"
-                  allowfullscreen
-                ></iframe>
-              </div>
-            </div>
-            <div className="grid-wrapper">
-              <div className="col-6">
-                <iframe
-                  id="youtube-video-7"
-                  width="560"
-                  height="315"
-                  src="https://www.youtube.com/embed/auXqukgQqGM"
-                  frameborder="0"
-                  allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen"
-                  allowfullscreen
-                ></iframe>
-              </div>
-              <div className="col-6">
-                <iframe
-                  id="youtube-video-8"
-                  width="560"
-                  height="315"
-                  src="https://www.youtube.com/embed/z7ET-szCfEo"
-                  frameborder="0"
-                  allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen"
-                  allowfullscreen
-                ></iframe>
-              </div>
-            </div>
-            <div className="grid-wrapper">
-              <div className="col-6">
-                <iframe
-                  id="youtube-video-9"
-                  width="560"
-                  height="315"
-                  src="https://www.youtube.com/embed/xHi7un-9zMI"
-                  frameborder="0"
-                  allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen"
-                  allowfullscreen
-                ></iframe>
-              </div>
             </div>
           </div>
         </section>
