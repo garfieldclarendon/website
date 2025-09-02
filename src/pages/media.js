@@ -175,7 +175,7 @@ const Landing = ({ data }) => {
             </header>
             <div className="grid-wrapper youtubeThumb">
               <p className="col-6">
-                <video>
+                <video controls>
                   <source
                     src="https://vcl.abcotv.net/video/wls/082018-wls-190north-lets-play-trains-vid.mp4"
                     type="video/mp4"
