@@ -45,6 +45,10 @@
     @include vendor('background-image', 'url("../images/railroadShow.jpg")');
   }
 
+  &.holidayOpenHouse {
+    @include vendor('background-image', 'url("../images/snowBP.png")');
+  }
+
   &.travelingLayout {
     @include vendor('background-image', 'url("../images/goTrain.jpeg")');
   }

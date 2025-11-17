@@ -26,28 +26,27 @@ const Banner = (props) => (
           </div>
           <div className="col-6">
             <header className="alt">
-              <h3>Open by Appointment Only</h3>
+              <h3>Grand Re-Opening Dec 13th, Noon - 4PM</h3>
               <p>
-                We are now open by appointment only with full hours expected in
-                Fall. Join our newsletter to be the first to learn about our
-                grand reopening.
+                Join Us for the Holly Jolly Express! Our end of year open house
+                and grand re-opening.
               </p>
               <p>
                 <a
-                  href="/newsletter"
+                  href="/events/december-open-house-2025"
                   className="button special"
-                  name="Join our Email Newsletter"
+                  name="Open House Information"
                 >
-                  Join our Email Newsletter
+                  Join Us for Our Open House
                 </a>
               </p>
               <p>
                 <a
-                  href="/membership"
+                  href="/newsletter"
                   className="button outline"
-                  name="Learn About Membership"
+                  name="Join our Email Newsletter"
                 >
-                  Learn About Membership
+                  Join our Email Newsletter
                 </a>
               </p>
             </header>
