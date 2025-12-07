@@ -70,9 +70,8 @@ const HolidayTrains = (props) => (
                 information, we are excited to talk. You will be amazed at the
                 level of detail and craftsmanship on display, and you will have
                 a chance to meet like-minded people who share your passion for
-                trains. So mark your calendar for April 20th from 10am to
-                4:30pm, and come see for yourself why model railroading is such
-                a fun and rewarding hobby.
+                trains. So come see for yourself why model railroading is such a
+                fun and rewarding hobby.
               </p>
             </div>
             <div className="col-6">
