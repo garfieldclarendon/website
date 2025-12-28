@@ -70,30 +70,17 @@ const Landing = () => {
         <section id="one">
           <div className="inner">
             <header className="major">
-              <h2>Open by Appointment Only</h2>
+              <h2>Hours</h2>
             </header>
+            <p>Fridays 7:00 PM to 9PM.</p>
             <p>
-              We are now open by appointment only with full hours expected in
-              Fall. Join our newsletter to be the first to learn about our grand
-              reopening.
+              <b>
+                Visitors are welcome! No reservation needed. Admission is free,
+                donations are appreciated.
+              </b>
             </p>
           </div>
         </section>
-        {/* <section id="one">
-          <div className="inner">
-            <header className="major">
-              <h2>Hours</h2>
-            </header>
-            <p>Fridays 5:30 PM to 7PM.</p>
-            <p>
-              <b>
-                All visitors must obtain a free ticket to ensure availability of
-                members and for capacity restrictions.
-              </b>
-            </p>
-            <div id="eventbrite-widget-container-395872343837"></div>
-          </div>
-        </section> */}
         <section id="two" className="spotlights">
           {
             <section>
@@ -109,7 +96,7 @@ const Landing = () => {
                     We often get asked if we are open other days than Friday. As
                     a non-profit volunteer lead group, we have limited
                     availability. As such, we only guarantee being available on
-                    Fridays from 5:00pm - 7:00pm.
+                    Fridays from 7:00pm - 9:00pm.
                   </p>
                 </div>
               </div>

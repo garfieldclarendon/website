@@ -11,21 +11,46 @@
     a {
         display: inline-block;
         margin-left: 8px;
+        color: #fff;
+        text-decoration: underline;
+        pointer-events: auto;
+        cursor: pointer;
+        position: relative;
+        z-index: 100001;
+        border: 0;
+
+        &:hover {
+            color: #f0f0f0;
+        }
+
+        &:focus {
+            outline: 2px solid rgba(255, 255, 255, 0.8);
+            outline-offset: 2px;
+        }
+    }
+
+    .noticeLink {
+        font-weight: bold;
     }
 
     p {
         padding: 8px 0 0 0;
+        color: #fff;
     }
 }
 
 // Push Content Down
 .hasNoticeBar {
+    #header {
+        top: 50px;
+    }
+
     #menu {
         .close {
             top: 50px;
         }
     }
-    
+
     .body {
         margin-top: 50px;
     }

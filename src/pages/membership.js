@@ -144,7 +144,7 @@ const Membership = (props) => (
               <p>
                 We suggest taking your time to explore our club on work days and
                 an operating session before making the decision to join.
-                Applications can be submitted on meeting days, the first Friday
+                Applications can be submitted on meeting days, the first Tuesday
                 of the month. Once submitted your application is read at the
                 monthly meeting four times, with a vote on the last reading. You
                 need to be present at the meetings for your application to be
@@ -153,7 +153,7 @@ const Membership = (props) => (
               </p>
               <p>
                 <b>
-                  Unable to attend on Fridays but still very interested in
+                  Unable to attend on Tuesdays but still very interested in
                   joining?
                 </b>{' '}
                 Contact us and we'll let you know about alternative membership

@@ -26,18 +26,18 @@ const Banner = (props) => (
           </div>
           <div className="col-6">
             <header className="alt">
-              <h3>Grand Re-Opening Dec 13th, Noon - 4PM</h3>
+              <h3>Open Fridays 7PM - 9:00PM</h3>
               <p>
-                Join Us for the Holly Jolly Express! Our end of year open house
-                and grand re-opening.
+                Join Us Fridays to tour the layout, see trains running and learn
+                about membership.
               </p>
               <p>
                 <a
-                  href="/events/december-open-house-2025"
+                  href="/visit"
                   className="button special"
-                  name="Open House Information"
+                  name="More Information"
                 >
-                  Join Us for Our Open House
+                  More Information
                 </a>
               </p>
               <p>

@@ -1,6 +1,5 @@
 import React from 'react'
 import BodyClassName from 'react-body-classname'
-import { Link } from 'gatsby'
 import { format, toDate, setDay, getDay } from 'date-fns'
 import startOfMonth from 'date-fns/startOfMonth'
 import { useStaticQuery, graphql } from 'gatsby'
@@ -26,13 +25,8 @@ const Notice = () => {
   const friday = 5
   const currentDay = format(new Date(), 'EEE')
   const start = startOfMonth(new Date())
-  const firstFriday = setDay(start, friday, { weekStartsOn: getDay(start) })
-  const isTheFirstWeek = toDate(new Date(firstFriday)) > new Date()
 
-  if (
-    !isTheFirstWeek &&
-    (currentDay === 'Wed' || currentDay === 'Thurs' || currentDay === 'Fri')
-  ) {
+  if (currentDay === 'Wed' || currentDay === 'Thurs' || currentDay === 'Fri') {
     showOpenMessage = true
   }
 
@@ -42,21 +36,22 @@ const Notice = () => {
 
   return (
     <BodyClassName
-      className={hasOpenHouses || showOpenMessage ? 'hasNoticeBar' : ''}
+      className={(hasOpenHouses || showOpenMessage) ? 'hasNoticeBar' : ''}
     >
       {(hasOpenHouses || showOpenMessage) && (
         <div className="noticeBar">
           <p>
-            {/* {showOpenMessage && (
+            {showOpenMessage && (
               <>
-                <b>Open on Friday (with RSVP):</b> 5:30PM - 7PM{' '}
-                <Link to="/visit">Learn More</Link>
+                <b>Open on Friday:</b> 7:00PM - 9:00PM{' '}
+                <a href="/visit" className="noticeLink" target="_blank" rel="noopener noreferrer">Learn More</a>
               </>
-            )} */}
+            )}
             {hasOpenHouses && (
               <>
+                {showOpenMessage && ' | '}
                 <b>Next event:</b> {format(theDate, 'EEEE MMM-do')}{' '}
-                <Link to="/open-houses">Learn More</Link>
+                <a href="/open-houses" className="noticeLink" target="_blank" rel="noopener noreferrer">Learn More</a>
               </>
             )}
           </p>

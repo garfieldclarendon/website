@@ -23,6 +23,7 @@
   min-height: 22em;
   position: relative;
   top: -3.25em;
+  z-index: 1;
 
   & video {
     &.loading {
@@ -293,6 +294,17 @@
 
     &.major {
       @include padding(6em, 0, (2em, 0, 0, 0));
+    }
+  }
+}
+
+// Adjust banner position when notice bar is present
+.hasNoticeBar {
+  #banner {
+    top: calc(-3.25em + 50px);
+
+    @include breakpoint(small) {
+      top: calc(-2.75em + 50px);
     }
   }
 }
